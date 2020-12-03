@@ -15,13 +15,20 @@ body {
           align-items: center;
 }
 
-.horizontal-center, .largeblock {
+.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.justify-content-between {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 #header {
@@ -58,7 +65,7 @@ ul {
 }
 
 li {
-  font-size: 13.33333;
+  font-size: 13.33333px;
   display: inline-block;
   color: white;
   margin: 0px 10px;
@@ -66,10 +73,7 @@ li {
 }
 
 .icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: -10;
+  margin-top: -10px;
 }
 
 .search-icon {
@@ -80,7 +84,7 @@ li {
 }
 
 .bag-icon {
-  font-size: 13.33333;
+  font-size: 13.33333px;
   padding: 15px;
   margin-right: 30px;
   color: white;
@@ -116,7 +120,7 @@ li {
   position: absolute;
   top: 320px;
   left: 500px;
-  font-size: 20;
+  font-size: 20px;
 }
 
 .box {
@@ -131,14 +135,14 @@ li {
 }
 
 .letter h1 {
-  font-size: 80;
+  font-size: 80px;
   font-weight: 800;
 }
 
 .letter p {
   color: lightgray;
   width: 100%;
-  font: weight 400;
+  font-weight: 400;
   height: 100%;
   margin: 10px 0px;
   padding: 10px -10px;
@@ -146,7 +150,7 @@ li {
 }
 
 .letter h5 {
-  font-size: 16;
+  font-size: 16px;
   padding: 20px 0px;
   font-weight: 100;
 }

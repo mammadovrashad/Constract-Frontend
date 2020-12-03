@@ -8,7 +8,12 @@ body{
     justify-content: space-between;
     align-items: center;}
 
-.horizontal-center{
-    display:flex;
+.flex{
+    display: flex;
+}
+.justify-content-between{
     justify-content: space-between;
+}
+.cursor-pointer{
+    cursor: pointer;
 }

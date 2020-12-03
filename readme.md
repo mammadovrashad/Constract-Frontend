@@ -14,7 +14,11 @@ DAY 1-istifade olunub
  13-height
  14-max-width
  15-max-height
+
  DAY-2
  1-font-weight
  2-<br> tag
  3-introduction to sass
+ 4-cursor-pointer
+ 5-classlarin-html-de-istifade-olunmasi
+
