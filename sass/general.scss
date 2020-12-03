@@ -3,3 +3,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 // qutunun her iki terefden merkeze getirilmesi space between formasinda
+.full-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.horizontal-center{
+    display:flex;
+    justify-content: space-between;
+}

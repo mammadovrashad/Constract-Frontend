@@ -44,12 +44,12 @@
   margin: 0px 17px;
 }
 
-.menu ul {
+.ul {
   margin: 0px;
   margin-top: -10px;
 }
 
-.menu ul li {
+.li {
   font-size: 15px;
   display: inline-block;
   color: white;
