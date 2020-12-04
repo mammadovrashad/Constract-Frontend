@@ -1,24 +1,30 @@
 DAY 1-istifade olunub 
- 1-background
- 2-border
- 3-padding
- 4-margin
- 5-tags
- 6-icons
- 7-display:(flex,inline-block)
- 8-justify-content
- 9-align-items
- 10-font-family,size
- 11-position absolute
- 12-width
- 13-height
- 14-max-width
- 15-max-height
+ -background
+ -border
+ -padding
+ -margin
+ -tags
+ -icons
+ -display:(flex,inline-block)
+ -justify-content
+ -align-items
+ -font-family,size
+ -position absolute
+ -width
+ -height
+ -max-width
+ -max-height
 
  DAY-2
- 1-font-weight
- 2-<br> tag
- 3-introduction to sass
- 4-cursor-pointer
- 5-classlarin-html-de-istifade-olunmasi
+ -font-weight
+ -<br> tag
+ -introduction to sass
+ -cursor-pointer
+ -classlarin-html-de-istifade-olunmasi
+ DAY-3
+ -box-sizing:border-box
+ -box-shadow
+ -transition: all s ease;
+ -position relative
+ -:hover
 
