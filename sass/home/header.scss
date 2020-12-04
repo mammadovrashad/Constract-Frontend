@@ -33,6 +33,9 @@
                             color:$color-white;
                             margin:0px $margin/6;
                             padding:$padding/4;
+                            &:hover{
+                                background: red;
+                            }
                           }        
                 .icon{
                     margin-top:$margin/-6;}
@@ -40,12 +43,20 @@
                     margin-right:$margin/20;
                     font-size: 15px;
                     padding:$padding/4;
-                    color:$color-white;}              
+                    color:$color-white;
+                    &:hover{
+                        background: red;
+                    }
+                    }              
                     .bag-icon{
                         font-size:$font-size/6;
                         padding:$padding/4;
                         margin-right:$margin/2;
-                        color:$color-white;}
+                        color:$color-white;
+                        &:hover{
+                            background: red;
+                        }
+                    }
                             
  .logo img{
      
@@ -56,7 +67,7 @@
      margin-top:-10px;
  }
  .line{
-     position:absolute;
+     position: absolute;
      top:790px;
      left:150px;
      width:$width;
@@ -143,6 +154,7 @@
             width: 110px;
             height: 100%;
             cursor: pointer;
+            border:none;
             &:hover{
                 background-color:(white);
                 i{
@@ -154,3 +166,24 @@
             }
 
  
+.right-buttons{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 570px;
+    height:85px;
+    }
+    .right-buttons button{
+        height: 100%;
+        width: 85px;
+        background:white;
+        &:hover{
+            background: red;
+            i{
+                color:white;
+            }
+        }
+    }
+    .right-buttons button i{
+        color: black;
+    }
