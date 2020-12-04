@@ -1,4 +1,5 @@
 DAY 1-istifade olunub 
+
  -background
  -border
  -padding
@@ -16,12 +17,16 @@ DAY 1-istifade olunub
  -max-height
 
  DAY-2
+
  -font-weight
  -<br> tag
  -introduction to sass
  -cursor-pointer
  -classlarin-html-de-istifade-olunmasi
+
+
  DAY-3
+
  -box-sizing:border-box
  -box-shadow
  -transition: all s ease;
