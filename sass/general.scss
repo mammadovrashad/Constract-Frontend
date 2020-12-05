@@ -17,3 +17,19 @@ body{
 .cursor-pointer{
     cursor: pointer;
 }
+.absolute{
+    position: absolute;
+}
+.hover {
+    &:hover{
+        background:#ca0c0c ;
+    }
+}
+.transition{
+    transition: all 0.6s ease;
+}
+.full-center2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
