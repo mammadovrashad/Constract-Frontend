@@ -56,8 +56,12 @@ body {
           justify-content: center;
 }
 
-.width {
+.width, .letter h1, h5, .letter p, .up-logo img {
   width: 100%;
+}
+
+.height, .letter h1, h5, .letter p, .up-logo img, .button {
+  height: 100%;
 }
 
 #header {
@@ -80,7 +84,6 @@ body {
 .largeblock {
   position: relative;
   z-index: 2;
-  width: 100%;
 }
 
 .menu {
@@ -141,7 +144,6 @@ li {
 
 .letter h1, h5 {
   color: white;
-  height: 100%;
   margin: 0px;
   font-weight: 50px;
 }
@@ -164,14 +166,12 @@ li {
 
 .letter h1 {
   font-size: 80px;
-  font-weight: 800;
+  font: weight 800;
 }
 
 .letter p {
   color: rgba(211, 211, 211, 0.897);
   font-weight: 400px;
-  width: 100%;
-  height: 100%;
   margin: 10px 0px;
   padding: 10px -10px;
   font-family: cursive;
@@ -191,27 +191,14 @@ li {
   height: 360px;
 }
 
-.up-logo img {
-  width: 100%;
-  height: 100%;
-}
-
 .up-page {
   left: 0px;
   top: 275px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
   height: 85px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
 .sentence {
-  width: 100%;
   height: 90px;
 }
 
@@ -225,7 +212,6 @@ li {
   background: #ca0c0c;
   color: white;
   width: 110px;
-  height: 100%;
   cursor: pointer;
   border: none;
   font-size: 20px;
@@ -249,7 +235,6 @@ li {
 }
 
 .right-buttons button {
-  height: 100%;
   width: 85px;
   background: white;
   font-size: 20px;
@@ -277,9 +262,6 @@ li {
 
 .under-button button {
   background: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 3px;
   height: 5px;
   margin: 10px;

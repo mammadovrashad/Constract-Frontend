@@ -17,8 +17,7 @@
          background-color: rgba(0,0,0,0.4);}
          .largeblock{
              position: relative;
-             z-index:2;
-             width:100%;}
+             z-index:2;}
             .rightblock{ 
                 @extend .full-center;
             }
@@ -65,11 +64,12 @@
      width:$width;
      height:$height/120;
      margin:0px auto;
-     background: red;
+     background:$color-red;
     }
  .letter h1,h5{
+     @extend .width;
      color:$color-white;
-     height:100%;
+     @extend .height;
      margin:0px;
      font-weight: 50px;
  }
@@ -84,15 +84,17 @@
         width: 223px;
         height:$height/60;
         padding:$padding/30;
-        background-color:#ca0c0c}
+        background-color:$color-darkred;
+    }
         .letter h1{
             font-size:$font-size;
-            font-weight:800;}
+            font: weight 800;
+        }
         .letter p {
             color:rgba(211, 211, 211, 0.897);
+            @extend .width;
+            @extend .height;
             font-weight:400px;
-            width: 100%;
-            height:100%;
             margin:$margin/6 0px;
             padding:$padding/6 $padding/-6;
             font-family:cursive;
@@ -100,8 +102,8 @@
         .letter h5{
             font-size:$font-size/5;
             padding:$padding/3 0px;
-            font-weight: 100;}
-        
+            font-weight:100;
+        }
 .up-logo{
     top: 260px;
     left: 158px;
@@ -110,20 +112,16 @@
     height: 360px;
     }
     .up-logo img{
-        width: 100%;
-        height: 100%;;
+        @extend .width;
+        @extend .height;
     }
     .up-page{  
         left: 0px;
         top: 275px;
-        display: flex;
-        justify-content:space-between;
-        width: 100%;
         height:85px;
         background-color: rgba($color:white, $alpha:0.8);
     }
     .sentence{
-        width: 100%;
         height: 90px;
     }
     .sentence h4{
@@ -132,16 +130,16 @@
         font-family:Arial, Helvetica, sans-serif;
         }
         .button{
-            background: #ca0c0c;
-            color:white;
+            background:$color-darkred;
+            color:$color-white;
             width: 110px;
-            height: 100%;
+            @extend .height;
             cursor: pointer;
             border:none;
             font-size:20px;
             &:hover{
-                background-color:(white);
-                color:#ca0c0c;}
+                background-color:$color-white;
+                color:$color-darkred;}
         }
 .right-buttons{
     display: flex;
@@ -150,14 +148,13 @@
     top: 570px;
     height:85px; }
     .right-buttons button{
-        height: 100%;
         width: 85px;
-        background:white;
+        background:$color-white;
         font-size:20px;
         &:hover {
-          background:#ca0c0c ;
+          background:$color-darkred;
           i{
-          color:white;
+          color:$color-white;
         }}
     }
     .right-buttons button i{
@@ -168,9 +165,7 @@
     padding-left: 15px;
     box-sizing: border-box;}
 .under-button button {
-    background:white;
-    display: flex;
-    width:3px;
-    height:5px;
-    margin:10px;
-}
+    background:$color-white;
+    width:$width/400;
+    height:$height/240;
+    margin:$margin/6;}
