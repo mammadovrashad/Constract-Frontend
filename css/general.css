@@ -55,4 +55,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.width {
+  width: 100%;
+}
 /*# sourceMappingURL=general.css.map */
