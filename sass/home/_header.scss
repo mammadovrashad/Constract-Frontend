@@ -1,4 +1,4 @@
-@import 'variables';
+@import '../variables';
 @import '../general';
 
 #header{
@@ -14,7 +14,8 @@
          z-index:1;
          height:$height/1.5;
          background-size:cover ;
-         background-color: rgba(0,0,0,0.4);}
+         background-color: rgba(0,0,0,0.4);
+        }
          .largeblock{
              position: relative;
              z-index:2;}
@@ -67,9 +68,9 @@
      background:$color-red;
     }
  .letter h1,h5{
-     @extend .width;
+     @extend .width-100;
      color:$color-white;
-     @extend .height;
+     @extend .height-100;
      margin:0px;
      font-weight: 50px;
  }
@@ -92,18 +93,35 @@
         }
         .letter p {
             color:rgba(211, 211, 211, 0.897);
-            @extend .width;
-            @extend .height;
+            @extend .width-100;
+            @extend .height-100;
             font-weight:400px;
             margin:$margin/6 0px;
             padding:$padding/6 $padding/-6;
             font-family:cursive;
             }
-        .letter h5{
+        .letter button{
+            width:20%;
+            position: relative;
+            top:30px;
+            height: $height/600;
+            background:$color-darkred;
+            &:hover{
+                background:none ;
+            }
+           }
+        .letter button h5{
             font-size:$font-size/5;
             padding:$padding/3 0px;
-            font-weight:100;
+            height:$height/24 ;
+            font: weight 600;
+            margin-left:-20px ;
+            box-sizing: border-box;
+            top:-46px;
         }
+        [class^="button"]{
+          outline: none;
+          }
 .up-logo{
     top: 260px;
     left: 158px;
@@ -112,8 +130,8 @@
     height: 360px;
     }
     .up-logo img{
-        @extend .width;
-        @extend .height;
+        @extend .width-100;
+        @extend .height-100;
     }
     .up-page{  
         left: 0px;
@@ -133,7 +151,7 @@
             background:$color-darkred;
             color:$color-white;
             width: 110px;
-            @extend .height;
+            @extend .height-100;
             cursor: pointer;
             border:none;
             font-size:20px;
@@ -168,4 +186,5 @@
     background:$color-white;
     width:$width/400;
     height:$height/240;
-    margin:$margin/6;}
+    margin:$margin/6;
+}

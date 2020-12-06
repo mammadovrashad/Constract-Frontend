@@ -33,3 +33,8 @@ DAY 1-istifade olunub
  -position relative
  -:hover
 
+DAY-4
+-[class^=""]funksiyasinin tetbiq edilmesi.
+-outline 
+-sass da @extend funksiyasinin tetbiq olunmasi
+
