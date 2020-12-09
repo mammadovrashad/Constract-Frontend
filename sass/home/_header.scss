@@ -3,11 +3,10 @@
 
 #header{
     background: url(../img/post_11-640x640.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend .background-img;
     height:$height/1.5;
 }
-    .over-lay{
+    .over-lay-header{
          position:absolute;
          top:0;
          left:0;
@@ -16,13 +15,13 @@
          background-size:cover ;
          background-color: rgba(0,0,0,0.4);
         }
-         .largeblock{
+         .largeblock-header{
              position: relative;
              z-index:2;}
-            .rightblock{ 
+            .rightblock-header{ 
                 @extend .full-center;
             }
-                .menu{
+                .menu-header{
                     margin:0px 17px;}
                     ul{
                          margin:0px;
@@ -34,30 +33,29 @@
                             margin:0px $margin/6;
                             padding:$padding/4;
                             }
-                .icon{
+                .icon-header{
                     margin-top:$margin/-6;
                 }
-                    .search-icon{
+                    .search-icon-header{
                     margin-right:$margin/15;
                     font-size: 15px;
                     padding:$padding/4;
                     color:$color-white;
                     box-shadow:0px 0px 2px;
                     }              
-                    .bag-icon{
+                    .bag-icon-header{
                         font-size:$font-size/6;
                         padding:$padding/4;
                         margin-right:$margin/2;
                         color:$color-white;
                         box-shadow:0px 0px 2px;
                     }
- .logo img{
-     
-     max-height:120px;
-     max-width:100%;
-     margin:0px $margin/2;
-     padding:$padding/4;
-     margin-top:-10px;
+ .logo-header img{
+    max-height:120px;
+    max-width:100%;
+    margin:0px $margin/2;
+    padding:$padding/4;
+    margin-top:-10px;
  }
  .line{
      top:790px;

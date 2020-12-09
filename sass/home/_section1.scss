@@ -1,0 +1,73 @@
+@import '../general';
+@import '../variables';
+@import 'IdMenu';
+#section1{
+    background: url(../img/post_08.jpg);
+    @extend .background-img;
+    width:100%;
+    height: 670px;
+}
+.over-lay-section1{
+    @extend .over-lay;
+
+}
+.largeblock-section1{
+    @extend .largeblock;
+}
+.rightblock-section1{
+    @extend .rightblock;
+}
+.menu-section1{
+    @extend .menu;
+}
+.icon-section1{
+    @extend .icon;
+}
+.search-icon-section1{
+    @extend .search-icon;
+}
+.bag-icon-section1{
+    @extend .bag-icon;
+}
+.logo-section1{
+    @extend .logo;
+}
+.row{
+display: flex;
+justify-content: space-between;
+}
+col-1{
+    width: $colwidth/1;
+}
+.col-2{
+    width: $colwidth/2;
+}
+.col-3{
+    width: $colwidth/3;
+}
+.col-4{
+    width: $colwidth/4;
+}
+.col-5{
+    width: $colwidth/5;
+}
+.col-6{
+    width: $colwidth/6;
+}
+.col-7{
+    width: $colwidth/7;
+}
+.col-8{
+    width: $colwidth/8;
+}
+.col-9{
+    width: $colwidth/9;
+}
+.col-10{
+    width: $colwidth/10;
+}.col-11{
+    width: $colwidth/11;
+}
+.col-12{
+    width: $colwidth/12;
+}
