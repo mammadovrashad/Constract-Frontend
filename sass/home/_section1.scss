@@ -2,10 +2,10 @@
 @import '../variables';
 @import 'IdMenu';
 #section1{
-    background: url(../img/post_08.jpg);
+    background: url(../img/1.jpg);
     @extend .background-img;
     width:100%;
-    height: 670px;
+    height: 700px;
 }
 .over-lay-section1{
     @extend .over-lay;
@@ -32,42 +32,61 @@
 .logo-section1{
     @extend .logo;
 }
-.row{
-display: flex;
-justify-content: space-between;
+.upletter-section1 h1{
+    @extend .upletter-section1H1
 }
-col-1{
-    width: $colwidth/1;
+.row-section1{
+    transform: translateY(225px);
+    position: relative;
 }
-.col-2{
-    width: $colwidth/2;
+.upletter-section1{
+    display: inline-block;
+    transform: translateX(160px);
 }
-.col-3{
-    width: $colwidth/3;
+.upletter-section1 p{
+    @extend .upletter-section1P
 }
-.col-4{
-    width: $colwidth/4;
+.section1-line{
+ height: 18px;
+ width: 260px;
+ background:$color-darkred ;
+ position: relative;
+ top: -20px;
+ z-index: -1;
 }
-.col-5{
-    width: $colwidth/5;
+.section1col-4{
+    background:white;
+    height: 400px;
+    margin-top: 60px;
 }
-.col-6{
-    width: $colwidth/6;
+.section1col-4 p{
+    padding:20px 30px;
+    color:gray;
+    font-size: 18px;
+    font-family:-webkit-pictograph;
+    margin:0px;
+    padding-bottom:0px;
 }
-.col-7{
-    width: $colwidth/7;
+.section1col-4 span{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-size: 70px;
+    color:$color-darkred;
 }
-.col-8{
-    width: $colwidth/8;
+.section1col-4 h3{
+    margin: 0px;
+    color: gray;
+    font-family: -webkit-pictograph;
+    margin-left: 35px;
+    font-size: 22px;
+    margin-top:-12px;
+    font-weight: 100;
 }
-.col-9{
-    width: $colwidth/9;
-}
-.col-10{
-    width: $colwidth/10;
-}.col-11{
-    width: $colwidth/11;
-}
-.col-12{
-    width: $colwidth/12;
+.upline-section1{
+    position: absolute;
+    top: 210px;
+    width: 1140px;
+    height: 10px;
+    background:$color-darkred;
 }
