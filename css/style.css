@@ -716,7 +716,7 @@ body {
 }
 
 .section1col-4 p {
-  padding: 20px 30px;
+  padding: 13px 30px;
   color: gray;
   font-size: 18px;
   font-family: -webkit-pictograph;
@@ -748,6 +748,54 @@ body {
   width: 1140px;
   height: 10px;
   background: #ca0c0c;
+}
+
+.section1coll-4 {
+  height: 400px;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.section1coll-4 .medium-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 0px;
+  left: -3px;
+}
+
+.section1coll-4 img {
+  height: 400px;
+  width: 384px;
+}
+
+.section1coll-4 .about-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 532px;
+  left: 400px;
+  z-index: 2;
+}
+
+.section1coll-4 .about-btn {
+  height: 85px;
+  width: 85px;
+  background: white;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.section1coll-4 .about-btn:hover {
+  background: #ca0c0c;
+}
+
+.section1coll-4 .about-btn:hover i {
+  color: white;
 }
 
 body {

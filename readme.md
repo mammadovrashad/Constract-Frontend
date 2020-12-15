@@ -21,7 +21,7 @@
   - justify-content 
   - font-weight 
   - display: flex,inline-block 
-  - <br> tag 
+  - (<br>) tag 
   - icons 
   - introduction to sass 
 
@@ -45,3 +45,14 @@
   - transforum scale()
   - overflow:hidden
   - flex-wrap:nowrap;
+##DAY-7
+  - javaScript vasitesi ile saytin dinamik versiyaya getirilmesi
+  - setInterval
+  - creatElement
+  - addEventListener
+  - querySelector
+  - getElementById
+  - getElementByClassName
+  - appendChild
+  - onclick
+  - removeChild

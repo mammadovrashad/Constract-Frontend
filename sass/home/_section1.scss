@@ -60,7 +60,7 @@
     margin-top: 60px;
 }
 .section1col-4 p{
-    padding:20px 30px;
+    padding:13px 30px;
     color:gray;
     font-size: 18px;
     font-family:-webkit-pictograph;
@@ -89,4 +89,40 @@
     width: 1140px;
     height: 10px;
     background:$color-darkred;
+}
+.section1coll-4{
+    height: 400px;
+    margin-top: 60px;
+    overflow: hidden;
+    .medium-logo{
+        display:flex;
+        position: relative;
+        top:0px;
+        left:-3px;
+    }
+    img{
+        height:400px;
+        width: 384px;
+    }
+    .about-btns{
+      display:flex;
+      position: absolute;;
+      top:532px;
+      left:400px;
+      z-index: 2;
+    }
+      .about-btn{
+        height: 85px;
+        width: 85px;
+        background:$color-white;
+        font-size:20px;
+        outline:none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background:$color-darkred;
+          i{
+          color:$color-white;}
+        }
+        }
 }
