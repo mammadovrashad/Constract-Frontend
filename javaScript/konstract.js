@@ -26,8 +26,7 @@ function Run1(){
     allup_logo.style.left=a+'px';
 }
 let aboutbtnRight=document.querySelectorAll('.about-btn')[1];
-console.log(aboutbtnRight)
-setInterval(Run2,6000)
+setInterval(Run2,3500)
 a=-3;
 b=-384;
 function Run2(){
@@ -40,3 +39,13 @@ function Run2(){
     allup_logo.style.left=a+'px';
 }
 aboutbtnRight.addEventListener('click',Run2)
+let upLogoHeader=document.querySelector('.up-logo-header')
+let overLayHead=document.querySelector('.over-lay-header')
+k=70;
+setInterval(Go,200)
+function Go(){
+    if(k<=70){
+    k=k+88
+    upLogoHeader.style.left=k+'px';
+}
+}

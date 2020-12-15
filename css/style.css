@@ -56,11 +56,11 @@ body {
           justify-content: center;
 }
 
-.width-100, .letter h1, h5, .letter p, .up-logo img, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
+.width-100, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo img, .button, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
+.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
   height: 100%;
 }
 
@@ -264,12 +264,14 @@ li {
   outline: none;
 }
 
-.up-logo {
+.up-logo-header {
   top: 260px;
-  left: 158px;
+  left: 70px;
   display: inline-block;
   width: 265px;
   height: 360px;
+  -webkit-transition: all  1.5s ease;
+  transition: all  1.5s ease;
 }
 
 .up-page {
@@ -406,11 +408,11 @@ body {
           justify-content: center;
 }
 
-.width-100, .letter h1, h5, .letter p, .up-logo img, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
+.width-100, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo img, .button, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
+.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
   height: 100%;
 }
 
@@ -534,11 +536,11 @@ body {
           justify-content: center;
 }
 
-.width-100, .letter h1, h5, .letter p, .up-logo img, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
+.width-100, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo img, .button, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
+.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
   height: 100%;
 }
 
@@ -856,11 +858,11 @@ body {
           justify-content: center;
 }
 
-.width-100, .letter h1, h5, .letter p, .up-logo img, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
+.width-100, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo img, .button, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
+.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H1, .upletter-section1 h1, .upletter-section1P, .upletter-section1 p {
   height: 100%;
 }
 

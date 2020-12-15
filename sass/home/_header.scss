@@ -120,14 +120,15 @@
         [class^="button"]{
           outline: none;
           }
-.up-logo{
+.up-logo-header{
     top: 260px;
-    left: 158px;
+    left: 70px;
     display: inline-block;
     width: 265px;
     height: 360px;
+    transition: all  1.5s ease;
     }
-    .up-logo img{
+    .up-logo-header img{
         @extend .width-100;
         @extend .height-100;
     }
