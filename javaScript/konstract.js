@@ -49,3 +49,19 @@ function Go(){
     upLogoHeader.style.left=k+'px';
 }
 }
+let allP=document.querySelectorAll('.all-p')[0]
+setInterval(Begin1,200)
+z1=300;
+function Begin1(){
+    if(z1>0){
+    z1=z1-300
+    allP.style.top=z1+'px'}
+}
+let allp=document.querySelectorAll('.all-p')[1]
+setInterval(Begin2,200)
+z2=300;
+function Begin2(){
+    if(z2>0){
+    z2=z2-300
+    allp.style.top=z2+'px'}
+}

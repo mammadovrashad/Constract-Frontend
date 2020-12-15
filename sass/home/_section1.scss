@@ -64,8 +64,14 @@
     color:gray;
     font-size: 18px;
     font-family:-webkit-pictograph;
-    margin:0px;
+    margin:5px;
     padding-bottom:0px;
+}
+.all-p{
+    position: relative;
+    top: 250px;
+    overflow: hidden;
+    @extend .transition
 }
 .section1col-4 span{
     position: relative;
