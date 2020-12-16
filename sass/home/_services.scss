@@ -1,27 +1,27 @@
 @import '../variables';
 @import '../general';
 
-#header{
-    background: url(../img/2.jpg); 
+#section2{
+    background: url(../img/8.jpg); 
     @extend .background-img;
-    height:$height/1.5;
+    height:$height/1.65;
 }
-    .over-lay-header{
+    .over-lay-section2{
          position:absolute;
          top:0;
          left:0;
          z-index:1;
-         height:$height/1.5;
+         height:$height/1.65;
          background-size:cover ;
          background-color: rgba(0,0,0,0.4);
         }
-         .largeblock-header{
+         .largeblock-section2{
              position: relative;
              z-index:2;}
-            .rightblock-header{ 
+            .rightblock-section2{ 
                 @extend .full-center;
             }
-                .menu-header{
+                .menu-section2{
                     margin:0px 17px;}
                     ul{
                          margin:0px;
@@ -36,65 +36,68 @@
                             color:$color-white;
                             }
                             }
-                .icon-header{
+                .icon-section2{
                     margin-top:$margin/-6;
                 }
-                    .search-icon-header{
+                    .search-icon-section2{
                     margin-right:$margin/15;
                     font-size: 15px;
                     padding:$padding/4;
                     color:$color-white;
                     box-shadow:0px 0px 2px;
                     }              
-                    .bag-icon-header{
+                    .bag-icon-section2{
                         font-size:$font-size/6;
                         padding:$padding/4;
                         margin-right:$margin/2;
                         color:$color-white;
                         box-shadow:0px 0px 2px;
                     }
- .logo-header img{
+ .logo-section2 img{
     max-height:120px;
     max-width:100%;
     margin:0px $margin/2;
     padding:$padding/4;
     margin-top:-10px;
  }
- .line{
-     top:790px;
-     left:150px;
-     width:$width;
+.line-section2{
      height:$height/120;
      margin:0px auto;
-     background:$color-red;
+     background:$color-red; 
+     top:471px;
+     left:5px;
+     width:$width;
     }
- .letter h1,h5{
+ .letter-section2 h1 {
      @extend .width-100;
      color:$color-white;
      @extend .height-100;
      margin:0px;
-     font-weight: 50px;
+    //  font: weight 800;
  }
-.letter{
-     top:320px;
-     left:500px;
+.letter-section2{
+    display: inline-block;
+    position: relative;
+     top:100px;
+     left:155px;
      font-size:$font-size/4;
      @extend .transition
     }
-    .box{
+    .box-section2{
         z-index:-1;
-        top:64px;
-        left:378px;
-        width: 223px;
-        height:$height/60;
+        top:120px;
+        left:5px;
+        width: 365px;
+        height:$height/80;
         padding:$padding/30;
         background-color:$color-darkred;
     }
-        .letter h1{
-            font-size:$font-size;
-            font: weight 800;
+        .letter-section2 h1{
+            font-size:65px;
+            font-weight: 600;
+            margin-top: 63px;
         }
-        .letter p {
+        .letter-section2 p {
             color:rgba(211, 211, 211, 0.897);
             @extend .width-100;
             @extend .height-100;
@@ -103,13 +106,13 @@
             padding:$padding/6 $padding/-6;
             font-family:cursive;
             }
-        .tags{
+        .tags-section2{
             width: 25%;
             background: none;
             position: relative;
             top:30px;
            }
-            .tags h5{
+            .tags-section2 h5{
             padding:$padding/3 0px;
             top:-35px;
             font-weight: 100;
@@ -121,70 +124,21 @@
         [class^="button"]{
           outline: none;
           }
-.up-logo-header{
-    top: 260px;
-    left: 70px;
+.up-logo-section2{
+    top: 0px;
+    left: 157%;
     display: inline-block;
     width: 265px;
     height: 360px;
     transition: all  1.5s ease;
     }
-    .up-logo-header img{
+    .up-logo-section2 img{
         @extend .width-100;
         @extend .height-100;
     }
-    .up-page{  
+    .up-page-section2{  
         left: 0px;
         top: 275px;
         height:85px;
         background-color: rgba($color:white, $alpha:0.8);
     }
-    .sentence{
-        height: 90px;
-    }
-    .sentence h4{
-        color:black;
-        text-align: center;
-        font-family:Arial, Helvetica, sans-serif;
-        }
-        .button{
-            background:$color-darkred;
-            color:$color-white;
-            width: 110px;
-            @extend .height-100;
-            cursor: pointer;
-            border:none;
-            font-size:20px;
-            &:hover{
-                background-color:$color-white;
-                color:$color-darkred;}
-        }
-.right-buttons{
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: 570px;
-    height:85px; }
-    .right-buttons button{
-        width: 85px;
-        background:$color-white;
-        font-size:20px;
-        &:hover {
-          background:$color-darkred;
-          i{
-          color:$color-white;
-        }}
-    }
-    .right-buttons button i{
-        color: black;}
-.under-button {
-    z-index:2;
-    top:740px;
-    padding-left: 15px;
-    box-sizing: border-box;}
-.under-button button {
-    background:$color-white;
-    width:$width/400;
-    height:$height/240;
-    margin:$margin/6;
-}

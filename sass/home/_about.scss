@@ -1,6 +1,6 @@
 @import '../general';
 @import '../variables';
-@import 'IdMenu';
+@import 'aboutClass';
 #section1{
     background: url(../img/1.jpg);
     @extend .background-img;
@@ -101,9 +101,10 @@
     margin-top: 60px;
     overflow: hidden;
     .medium-logo{
+        background: $color-white;
         display:flex;
         position: relative;
-        top:0px;
+        top:5px;
         left:-3px;
     }
     img{

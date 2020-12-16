@@ -23,7 +23,16 @@ body{
 .hover {
     &:hover{
         background:#ca0c0c ;
-    }
+        left: 0px;
+        width: 80px;
+        text-align: center;
+    }}
+.hover2 {
+    &:hover{
+         background:#ca0c0c ;
+         width: 30px;
+         text-align: center;
+        }
 }
 .transition{
     transition: all 0.6s ease;
