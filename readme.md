@@ -56,3 +56,7 @@
   - appendChild
   - onclick
   - removeChild
+##DAY-8
+  - mouseover
+  - dropdown hissesinin yazilmasi
+  - single service hissesinin yazilmasi

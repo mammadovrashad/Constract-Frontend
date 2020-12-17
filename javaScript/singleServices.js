@@ -1,4 +1,4 @@
-let section1cl4=document.querySelectorAll('.section1coll-4')[0];
+let section1cl4=document.querySelectorAll('.singleServicescoll-4')[0];
 let mediumDiv=document.createElement('div');
 mediumDiv.className='medium-logo';
 section1cl4.appendChild(mediumDiv);
@@ -13,7 +13,7 @@ mediumDiv.appendChild(section1c4Div);
 section1c4Div.style.height=400+'px';}
 
 
-let aboutbtnLeft=document.querySelectorAll('.about-btn')[0]
+let aboutbtnLeft=document.querySelectorAll('.singleServices-btn')[0]
 aboutbtnLeft.addEventListener('click',Run1)
 a=-3;
 b=-384;
@@ -27,7 +27,7 @@ function Run1(){
         }
         allup_logo.style.left=a+'px'; 
 }
-let aboutbtnRight=document.querySelectorAll('.about-btn')[1];
+let aboutbtnRight=document.querySelectorAll('.singleServices-btn')[1];
 let interval=setInterval(Run2,3000)
 a=-3;
 b=-384;

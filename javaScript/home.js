@@ -19,3 +19,18 @@ function Appear(){
     letter.style.display='block';
 }
 
+
+let upHand=document.querySelectorAll('img','src')[1]
+let upInterval=setInterval(function(){
+    upHand.style.top=560+'px'
+},800)
+li0.addEventListener('click',function(){
+    upHand.style.top=560+'px'
+})
+let subMenu=document.querySelector(".sup-menu")
+console.log(subMenu)
+let li2=document.querySelectorAll('.li')[2]
+console.log(li2)
+li2.addEventListener('mouseover',function(){
+    subMenu.style.display="block"
+})
