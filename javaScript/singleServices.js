@@ -73,11 +73,13 @@ li1.addEventListener('click',Begin1)
 li1.addEventListener('click',Begin2)
 li1.addEventListener('click',Clear)
 
-let subMenu=document.querySelector(".sup-menu")
-console.log(subMenu)
+let subMenusingle=document.querySelector(".sub-menuSingleS")
+console.log(subMenusingle)
 let li2=document.querySelectorAll('.li')[2]
 console.log(li2)
 li2.addEventListener('mouseover',function(){
-    subMenu.style.display="block"
+    subMenusingle.style.display="block"
 })
+li2.addEventListener('mouseout',function(){
+    subMenusingle.style.display="none"})
 

@@ -6,7 +6,7 @@
     z-index:1;
     height:($height/4)*2.338;
     background-size:cover ;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
 }
 .largeblock{
     position: relative;
@@ -58,7 +58,7 @@
      padding:$padding/4;
      margin-top:-10px;
 }
-.upletter-section1H1 {
+.upletter-section1H{
     @extend .width-100;
     color:$color-white;
     @extend .height-100;

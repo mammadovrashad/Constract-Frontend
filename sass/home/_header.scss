@@ -37,6 +37,7 @@
                             color:$color-white;
                             text-decoration:none;
                             border-radius: 3px;
+                            font-size: 15px;
                             }
                             }
                 .icon-header{
@@ -191,6 +192,21 @@
     height:$height/240;
     margin:$margin/6;
 }
-.sub-menu{
-    
+.sub-menuHead{
+    display:none;
+    background:white;
+    position:absolute;
+    top:90px;
+    height: 50px;
+    left:53.80%;
+    ul{
+        margin-left: -30px;
+    }
+    ul li{
+        margin: 8px;        }
+    ul li a{
+    color:red;
+    z-index: 2;
+    font-size: 15px !important;
+    }
 }

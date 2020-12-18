@@ -23,14 +23,16 @@ function Appear(){
 let upHand=document.querySelectorAll('img','src')[1]
 let upInterval=setInterval(function(){
     upHand.style.top=560+'px'
-},800)
+},600)
 li0.addEventListener('click',function(){
     upHand.style.top=560+'px'
 })
-let subMenu=document.querySelector(".sup-menu")
-console.log(subMenu)
+let subMenuHead=document.querySelector(".sub-menuHead")
+console.log(subMenuHead)
 let li2=document.querySelectorAll('.li')[2]
 console.log(li2)
 li2.addEventListener('mouseover',function(){
-    subMenu.style.display="block"
+    subMenuHead.style.display="block"
 })
+li2.addEventListener('mouseout',function(){
+    subMenuHead.style.display="none"})

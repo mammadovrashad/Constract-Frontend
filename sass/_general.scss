@@ -92,21 +92,25 @@ body{
     .col-12{
         width: $colwidth/12;
     }
-    .sup-menu{
+    .sub-menu{
         display:none;
         background:white;
         position:absolute;
-        top:90px;
+        top:95px;
         height: 50px;
         left:53.80%;
         ul{
             margin-left: -30px;
-        }
-        ul li{
-            margin: 10px;
-        }
-        ul li a{
+        li{
+            margin: 8px; 
+        &:hover{
+            background: none;
+        }       }
+        a{
         color:red;
         z-index: 2;
+        font-size: 15px;
         }
+    }
+
     }

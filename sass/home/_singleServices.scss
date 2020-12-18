@@ -33,7 +33,7 @@
     @extend .logo;
 }
 .upletter-singleServices h1{
-    @extend .upletter-section1H1
+    @extend .upletter-section1H
 }
 .row-singleServices{
     transform: translateY(225px);
@@ -138,12 +138,6 @@
         }
         }
 }
-.sup-menu{
-    @extend .sup-menu;
-    ul li{
-        &:hover{
-            background:none;
-        }
-    }
-
+.sub-menuSingleS{
+    @extend .sub-menu;
 }

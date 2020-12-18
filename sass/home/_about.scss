@@ -19,6 +19,9 @@
 }
 .menu-section1{
     @extend .menu;
+    .li a{
+        font-size: 15px
+    }
 }
 .icon-section1{
     @extend .icon;
@@ -33,7 +36,7 @@
     @extend .logo;
 }
 .upletter-section1 h1{
-    @extend .upletter-section1H1
+    @extend .upletter-section1H;
 }
 .row-section1{
     transform: translateY(225px);
@@ -132,4 +135,6 @@
           color:$color-white;}
         }
         }
+}.sub-menuAbout{
+    @extend .sub-menu;
 }
