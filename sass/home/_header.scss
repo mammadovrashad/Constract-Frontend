@@ -20,6 +20,7 @@
              z-index:2;}
             .rightblock-header{ 
                 @extend .full-center;
+            
             }
                 .menu-header{
                     margin:0px 17px;}
@@ -107,14 +108,18 @@
             padding:$padding/6 $padding/-6;
             font-family:cursive;}
         .tags{
-            width: 25%;
+            width: 18%;
             background: none;
             position: relative;
+            padding: 6px;
             top:30px;
+            left:0px;
+            // border-bottom: 2px solid red;;
            }
             .tags h5{
             padding:$padding/3 0px;
             top:-35px;
+            left:0px;
             font-weight: 100;
             a{
                 color:$color-white;
