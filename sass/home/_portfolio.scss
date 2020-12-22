@@ -1,6 +1,7 @@
 @import '../general';
 @import '../variables';
 @import 'aboutClass';
+
 #section3{
     background:$color-white;
     @extend .background-img;
@@ -124,7 +125,13 @@
     background-size:cover ;
     color: rgba(0,0,0,0.4);
     height: 420px;
-}.sub-menuPortfolio{
+}
+.over-layPortfolio{
+    height: 420px;
+    width: 100%;
+    background:rgba(0,0,0,0.2);
+}
+.sub-menuPortfolio{
         display:none;
         background:white;
         position: absolute;
@@ -170,19 +177,63 @@
     width: 0%;
     height: 270px;
     object-fit: cover;
-    background:rgba(0,0,0,0.2)
+    background:rgba(0,0,0,0.1)
 }
 .plus-btn{
     transform: translateY(-59px);
     position: relative;
     display:flex;
-    z-index: 8;
+    z-index: 3;
     justify-content: center;
     align-items: center;
-    height: 55px;
+    height: 60px;
     width: 0px;
-    background: red;
-    .fas{
+    background:rgb(221, 12, 12);
+    i{
         display:none;
         color: white;
     }}
+.overlay-modal{
+        display:block;
+        width:100%;
+        height:1200px;
+        z-index: 5;
+        background:rgba(0,0,0,0.8);
+        position: absolute;
+        top:0px;
+        left:0px;}
+.up-btn-overlay{
+   @extend .btn-overlay;
+   position: absolute;
+        z-index: 8;
+        top:66%;
+        left:94.7%;
+}
+.next-btn-overlay{
+    @extend .btn-overlay;
+    position: absolute;
+        z-index: 8;
+        top:155%;
+        left:94.7%;
+}
+.prew-btn-overlay{
+    @extend .btn-overlay;
+    position: absolute;
+        z-index: 8;
+        top:155%;
+        left:89.7%;
+}
+.front-img{
+    height:620px;
+    width: 65%;
+    position:relative;
+    top:540px;
+    left:260px;
+    z-index: 15;
+    background:$color-white;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

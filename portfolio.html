@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="sass/home/_portfolio.scss">
+    <link rel="stylesheet" href="sass/home/portfolio2.scss">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
@@ -44,12 +44,13 @@
                 </div>
             </div>
         </div>
-        <div class="over-lay-section3 width-100">
+      <div class="over-lay-section3 width-100">
         <div class="row">
             <div class="col-1">
                 <div class="medium-background">
+                    <div class="over-layPortfolio">
                     <div class="col-2">
-                      <div class="portfolio-up">
+                      <div class="portfolio-up ">
                         <div class="portfolio-btns">
                             <span class="portfolio-btn1"><a href="service.html"><i class="fas fa-pencil-alt"></i>Services</a></span>
                             <span class="portfolio-btn2"><a href="singleServices.html">Single Services</a></span>
@@ -59,11 +60,15 @@
                       </div>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
       </div>
 </header>
 <section id="portfolio-section">
+    <button class="up-btn-overlay transition" ><p>Close</p></button>
+    <button class="next-btn-overlay transition"><p>Next</p></button>
+    <button class="prew-btn-overlay transition"><p>Prew</p></button>
     <div class="row">
         <div class="col-4" style="margin: 10px;">
             <div class="modul-img">
@@ -110,6 +115,7 @@
             </div>
         </div>
     </div>
+    <div class="up-modal"></div>
 </section>
 </body>
 <script src="javaScript/portfolio.js"></script>

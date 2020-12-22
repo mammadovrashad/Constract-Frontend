@@ -7,34 +7,10 @@ li2.addEventListener('mouseout',function(){
     subMenuPortfolio.style.display="none"})
 
 
-let largeblockSticky=document.querySelector('.largeblock-section3')
-let logoSticky=document.querySelectorAll("img")[0]
-let submenuPortfolio=document.querySelector(".sub-menuPortfolio")
-let portfolioMenu=document.querySelector(".rightblock-section3")
-window.addEventListener('scroll',function(){
-    if(window.scrollY>300){
-    largeblockSticky.style.position='fixed'
-    largeblockSticky.style.maxHeight=75+'px';
-    logoSticky.style.maxHeight=75+'px'
-    subMenuPortfolio.style.top=67+'px'
-    largeblockSticky.style.background='white'
-    // largeblockSticky.style.transition='all 0.6s ease'
-    // logoSticky.style.transition='all 0.6s ease'
-    }
-    else{
-        largeblockSticky.style.position='absolute'
-        largeblockSticky.style.maxHeight=130+'px';
-        logoSticky.style.maxHeight=120+'px'
-        subMenuPortfolio.style.top=93+'px'
-        largeblockSticky.style.background='white'
-        portfolioMenu.style.marginTop=17+'px'
-       
-    }
-})
 let imgOver1=document.querySelectorAll('img')[1]
 let plusBtn1=document.querySelectorAll('.plus-btn')[0]
 let overLayimg1=document.querySelectorAll('.over-lay-plus')[0]
-let plusicon6=document.querySelectorAll('.fas')[6]
+let plusicon6=document.querySelectorAll('.fas ')[6]
 overLayimg1.style.width=0+'%'
 plusBtn1.style.width=0+'px';
 plusicon6.style.display='none'
@@ -65,7 +41,7 @@ overLayimg1.addEventListener('mouseout',function(){
 let imgOver2=document.querySelectorAll('img')[2]
 let plusBtn2=document.querySelectorAll('.plus-btn')[1]
 let overLayimg2=document.querySelectorAll('.over-lay-plus')[1]
-let plusicon7=document.querySelectorAll('.fas')[7]
+let plusicon7=document.querySelectorAll('.fas ')[7]
 overLayimg2.style.width=0+'%'
 plusBtn2.style.width=0+'px';
 plusicon7.style.display='none'
@@ -145,10 +121,10 @@ overLayimg4.addEventListener('mouseover',function(){
     plusBtn4.style.transition='all 0.4s ease'
     overLayimg4.style.transition='all 0.4s ease'
   })
-imgOver2.addEventListener('mouseout',function(){
-    plusBtn2.style.width=0+'px';
-    overLayimg2.style.width=0+'%'
-    plusicon7.style.display='none'
+imgOver4.addEventListener('mouseout',function(){ 
+    plusBtn4.style.width=0+'px';
+    overLayimg4.style.width=0+'%'
+    plusicon9.style.display='none'
 })
 overLayimg4.addEventListener('mouseout',function(){
     plusBtn4.style.width=0+'px';
@@ -217,3 +193,144 @@ overLayimg6.addEventListener('mouseout',function(){
     overLayimg6.style.width=0+'%'
     plusicon11.style.display='none'
 })
+let largeblockSticky=document.querySelector('.largeblock-section3')
+let logoSticky=document.querySelectorAll("img")[0]
+let submenuPortfolio=document.querySelector(".sub-menuPortfolio")
+let portfolioMenu=document.querySelector(".rightblock-section3")
+window.addEventListener('scroll',function(){
+    if(window.scrollY>300){
+        console.log(window.scroll)
+    largeblockSticky.style.position='fixed'
+    largeblockSticky.style.maxHeight=75+'px';
+    logoSticky.style.maxHeight=75+'px'
+    subMenuPortfolio.style.top=67+'px'
+    largeblockSticky.style.background='white'
+    // largeblockSticky.style.transition='all 0.6s ease'
+    // logoSticky.style.transition='all 0.6s ease'
+    }
+    else{
+        largeblockSticky.style.position='absolute'
+        largeblockSticky.style.maxHeight=130+'px';
+        logoSticky.style.maxHeight=120+'px'
+        subMenuPortfolio.style.top=93+'px'
+        largeblockSticky.style.background='white'
+        portfolioMenu.style.marginTop=17+'px'
+       
+    }
+})
+
+let portfolioSection=document.querySelector('#portfolio-section')
+let upmodal=document.querySelector('.up-modal')
+overLayimg1.addEventListener('click',function(){
+let  overlayDiv =document.createElement('div')
+overlayDiv.className='overlay-modal'
+upmodal.appendChild(overlayDiv)
+let frontDiv=document.createElement('div')
+frontDiv.className='front-img'
+overlayDiv.appendChild(frontDiv)
+let frontImg=document.createElement('img')
+frontImg.setAttribute('src',imgs[0])
+frontDiv.appendChild(frontImg)
+document.querySelector('.up-btn-overlay').style.display='block'
+// document.querySelector('.next-btn-overlay').style.display='block'
+// document.querySelector('.prew-btn-overlay').style.display='block'
+
+})
+overLayimg2.addEventListener('click',function(){
+  let  overlayDiv =document.createElement('div')
+  overlayDiv.className='overlay-modal'
+  upmodal.appendChild(overlayDiv)
+  let frontDiv=document.createElement('div')
+  frontDiv.className='front-img'
+  overlayDiv.appendChild(frontDiv)
+  let frontImg=document.createElement('img')
+  frontImg.setAttribute('src',imgs[1])
+  frontDiv.appendChild(frontImg)
+  document.querySelector('.up-btn-overlay').style.display='block'
+  // document.querySelector('.next-btn-overlay').style.display='block'
+  // document.querySelector('.prew-btn-overlay').style.display='block'
+  })
+  overLayimg3.addEventListener('click',function(){
+    let  overlayDiv =document.createElement('div')
+    overlayDiv.className='overlay-modal'
+    upmodal.appendChild(overlayDiv)
+    let frontDiv=document.createElement('div')
+    frontDiv.className='front-img'
+    overlayDiv.appendChild(frontDiv)
+    let frontImg=document.createElement('img')
+    frontImg.setAttribute('src',imgs[2])
+    frontDiv.appendChild(frontImg)
+    document.querySelector('.up-btn-overlay').style.display='block'
+    // document.querySelector('.next-btn-overlay').style.display='block'
+    // document.querySelector('.prew-btn-overlay').style.display='block'
+    })
+    overLayimg4.addEventListener('click',function(){
+      let  overlayDiv =document.createElement('div')
+      overlayDiv.className='overlay-modal'
+      upmodal.appendChild(overlayDiv)
+      let frontDiv=document.createElement('div')
+      frontDiv.className='front-img'
+      overlayDiv.appendChild(frontDiv)
+      let frontImg=document.createElement('img')
+      frontImg.setAttribute('src',imgs[3])
+      frontDiv.appendChild(frontImg)
+      document.querySelector('.up-btn-overlay').style.display='block'
+      // document.querySelector('.next-btn-overlay').style.display='block'
+      // document.querySelector('.prew-btn-overlay').style.display='block'
+
+      })
+      overLayimg5.addEventListener('click',function(){
+        let  overlayDiv =document.createElement('div')
+        overlayDiv.className='overlay-modal'
+        upmodal.appendChild(overlayDiv)
+        let frontDiv=document.createElement('div')
+        frontDiv.className='front-img'
+        overlayDiv.appendChild(frontDiv)
+        let frontImg=document.createElement('img')
+        frontImg.setAttribute('src',imgs[4])
+        frontDiv.appendChild(frontImg)
+        document.querySelector('.up-btn-overlay').style.display='block'
+        // document.querySelector('.next-btn-overlay').style.display='block'
+        // document.querySelector('.prew-btn-overlay').style.display='block'
+        })
+        overLayimg6.addEventListener('click',function(){
+          let  overlayDiv =document.createElement('div')
+          overlayDiv.className='overlay-modal'
+          upmodal.appendChild(overlayDiv)
+          let frontDiv=document.createElement('div')
+          frontDiv.className='front-img'
+          overlayDiv.appendChild(frontDiv)
+          let frontImg=document.createElement('img')
+          frontImg.setAttribute('src',imgs[5])
+          frontDiv.appendChild(frontImg)
+          document.querySelector('.up-btn-overlay').style.display='block'
+          // document.querySelector('.next-btn-overlay').style.display='block'
+          // document.querySelector('.prew-btn-overlay').style.display='block'
+          })
+
+let exitBtn=document.querySelector('.up-btn-overlay')
+exitBtn.addEventListener('click',function(){
+  upmodal.removeChild(upmodal.firstChild);
+  document.querySelector('.up-btn-overlay').style.display='none'
+  document.querySelector('.next-btn-overlay').style.display='none'
+  document.querySelector('.prew-btn-overlay').style.display='none'
+})
+
+
+
+imgs=["img/17.jpg","img/16.jpg","img/15.jpg","img/13.jpg","img/12.jpg","img/14.jpg"]
+// let next_btn=document.querySelector('.next-btn-overlay')
+// for(i=0;i<imgs.length;i++){
+//   let  overlayDiv =document.createElement('div')
+//   next_btn.addEventListener('click',function(){
+//           upmodal.removeChild(upmodal.firstChild);
+//           overlayDiv.className='overlay-modal'
+//           upmodal.appendChild(overlayDiv)
+//           let frontDiv=document.createElement('div')
+//           frontDiv.className='front-img'
+//           overlayDiv.appendChild(frontDiv)
+//           let frontImg=document.createElement('img')
+//           frontImg.setAttribute('src',imgs[i])
+//           frontDiv.appendChild(frontImg)
+//         })
+// }

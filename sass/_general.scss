@@ -56,7 +56,6 @@ body{
     display: flex;
     justify-content: center;
     }
-    
     .col-1{
         width: $colwidth/1;
     }
@@ -113,4 +112,20 @@ body{
         }
     }
 
+    }
+.btn-overlay{
+        display: none;
+        height: 80px;
+        width: 80px;
+        background:$color-white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background:rgb(238, 13, 13);
+            color: white;
+        }
+        p{
+            font-size: 16px;
+        }
     }
