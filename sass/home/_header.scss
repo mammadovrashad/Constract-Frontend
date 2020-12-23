@@ -5,6 +5,8 @@
     background: url(../img/2.jpg); 
     @extend .background-img;
     height:$height/1.5;
+    @extend .width-100;
+    // max-width: 100%;
 }
     .over-lay-header{
          position:absolute;
@@ -20,15 +22,19 @@
              z-index:2;}
             .rightblock-header{ 
                 @extend .full-center;
-            
             }
                 .menu-header{
-                    margin:0px 17px;}
+                    margin:0px 17px;
+                    width:100% ;}
                     ul{
+                        ul{
+                            position: relative;
+                        }
                          margin:0px;
                          list-style: none;
                          margin-top:-$margin/6;}
                         .li{
+                            position:relative;
                             font-size:$font-size/6;
                             display:inline-block;
                             color:$color-white;
@@ -68,7 +74,7 @@
  .line{
      top:790px;
      left:150px;
-     width:$width;
+     width:79%;
      height:$height/120;
      margin:0px auto;
      background:$color-red;
@@ -88,8 +94,8 @@
     }
     .box{
         z-index:-1;
-        top:64px;
-        left:378px;
+        top: 33.5%;
+        left: 45.1%;
         width: 223px;
         height:$height/60;
         padding:$padding/30;
@@ -198,20 +204,11 @@
     margin:$margin/6;
 }
 .sub-menuHead{
-    display:none;
-    background:white;
-    position:absolute;
-    top:90px;
-    height: 50px;
-    left:53.80%;
-    ul{
-        margin-left: -30px;
-    }
-    ul li{
-        margin: 8px;        }
-    ul li a{
-    color:red;
-    z-index: 2;
-    font-size: 15px !important;
+    @extend .sub-menu;
+    top:91px !important;
+}
+@media all and (min-width:1520){
+    .sub-menuHead{
+         left:60% !important;
     }
 }

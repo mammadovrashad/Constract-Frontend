@@ -107,14 +107,18 @@
     overflow: hidden;
     .medium-logo{
         background: $color-white;
+        width: 1536px;
         display:flex;
         position: relative;
         top:5px;
         left:-3px;
+        .allup-logo{
+            width: 384px;
+        }
     }
     img{
         height:400px;
-        width: 384px;
+        width: 100%;
     }
     .singleServices-btns{
       display:flex;

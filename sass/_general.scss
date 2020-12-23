@@ -23,15 +23,10 @@ body{
 .hover {
     &:hover{
         background:#ca0c0c ;
-        left: 0px;
-        width: 80px;
-        text-align: center;
     }}
 .hover2 {
     &:hover{
          background:#ca0c0c ;
-         width: 30px;
-         text-align: center;
         }
 }
 .transition{
@@ -94,10 +89,10 @@ body{
     .sub-menu{
         display:none;
         background:white;
-        position:absolute;
-        top:95px;
+        position: fixed;
+        top:96px;
         height: 50px;
-        left:53.80%;
+        left:53.1%;
         ul{
             margin-left: -30px;
         li{

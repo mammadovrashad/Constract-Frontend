@@ -95,7 +95,7 @@
 .upline-section1{
     position: absolute;
     top: 210px;
-    width: 1140px;
+    width: 75%;
     height: 10px;
     background:$color-darkred;
 }
@@ -104,15 +104,20 @@
     margin-top: 60px;
     overflow: hidden;
     .medium-logo{
+        width: 1536px;
         background: $color-white;
         display:flex;
         position: relative;
         top:5px;
         left:-3px;
+        .allup-logo{
+            width: 384px;
+        }
     }
     img{
         height:400px;
-        width: 384px;
+        // width: 384px;
+        width: 100%;
     }
     .about-btns{
       display:flex;
