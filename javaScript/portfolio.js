@@ -1,10 +1,12 @@
-let subMenuPortfolio=document.querySelector(".sub-menuPortfolio")
+let serviceUl=document.querySelectorAll('ul')[1]
+console.log(serviceUl)
 let li2=document.querySelectorAll('.li')[2]
+console.log(li2)
 li2.addEventListener('mouseover',function(){
-    subMenuPortfolio.style.display="block"
+    serviceUl.style.display="block"
 })
 li2.addEventListener('mouseout',function(){
-    subMenuPortfolio.style.display="none"})
+    serviceUl.style.display="none"})
 
 
 let imgOver1=document.querySelectorAll('img')[1]
@@ -195,24 +197,21 @@ overLayimg6.addEventListener('mouseout',function(){
 })
 let largeblockSticky=document.querySelector('.largeblock-section3')
 let logoSticky=document.querySelectorAll("img")[0]
-let submenuPortfolio=document.querySelector(".sub-menuPortfolio")
+// console.log(serviceUl)
 let portfolioMenu=document.querySelector(".rightblock-section3")
 window.addEventListener('scroll',function(){
-    if(window.scrollY>300){
+    if(window.scrollY>270){
         console.log(window.scroll)
     largeblockSticky.style.position='fixed'
     largeblockSticky.style.maxHeight=75+'px';
     logoSticky.style.maxHeight=75+'px'
-    subMenuPortfolio.style.top=67+'px'
     largeblockSticky.style.background='white'
-    // largeblockSticky.style.transition='all 0.6s ease'
-    // logoSticky.style.transition='all 0.6s ease'
     }
     else{
         largeblockSticky.style.position='absolute'
         largeblockSticky.style.maxHeight=130+'px';
         logoSticky.style.maxHeight=120+'px'
-        subMenuPortfolio.style.top=93+'px'
+        serviceUl.style.top=93+'px'
         largeblockSticky.style.background='white'
         portfolioMenu.style.marginTop=17+'px'
        

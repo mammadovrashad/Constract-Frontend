@@ -37,6 +37,8 @@ body {
 
 .hover:hover {
   background: #ca0c0c;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hover2:hover {
@@ -130,33 +132,6 @@ body {
   width: 8.33333%;
 }
 
-.sub-menu, .sub-menuHead, .sub-menuAbout, .sub-menuService, .sub-menuSingleS, .sub-menuPortfolio {
-  display: none;
-  background: white;
-  position: fixed;
-  top: 96px;
-  height: 50px;
-  left: 53.1%;
-}
-
-.sub-menu ul, .sub-menuHead ul, .sub-menuAbout ul, .sub-menuService ul, .sub-menuSingleS ul, .sub-menuPortfolio ul {
-  margin-left: -30px;
-}
-
-.sub-menu ul li, .sub-menuHead ul li, .sub-menuAbout ul li, .sub-menuService ul li, .sub-menuSingleS ul li, .sub-menuPortfolio ul li {
-  margin: 8px;
-}
-
-.sub-menu ul li:hover, .sub-menuHead ul li:hover, .sub-menuAbout ul li:hover, .sub-menuService ul li:hover, .sub-menuSingleS ul li:hover, .sub-menuPortfolio ul li:hover {
-  background: none;
-}
-
-.sub-menu ul a, .sub-menuHead ul a, .sub-menuAbout ul a, .sub-menuService ul a, .sub-menuSingleS ul a, .sub-menuPortfolio ul a {
-  color: red;
-  z-index: 2;
-  font-size: 15px;
-}
-
 .btn-overlay, .up-btn-overlay, .next-btn-overlay, .prew-btn-overlay {
   display: none;
   height: 80px;
@@ -202,13 +177,10 @@ body {
 }
 
 ul {
+  position: relative;
   margin: 0px;
   list-style: none;
   margin-top: -10px;
-}
-
-ul ul {
-  position: relative;
 }
 
 .li {
@@ -311,10 +283,11 @@ ul ul {
 }
 
 .tags h5 {
-  padding: 20px 0px;
+  padding: 15px 0px;
   top: -35px;
   left: 0px;
   font-weight: 100;
+  border-bottom: 2px solid red;
 }
 
 .tags h5 a {
@@ -375,12 +348,12 @@ ul ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
-  top: 570px;
+  top: 715px;
   height: 85px;
 }
 
 .right-buttons button {
-  width: 85px;
+  width: 5.5%;
   background: white;
   font-size: 20px;
 }
@@ -412,14 +385,160 @@ ul ul {
   margin: 10px;
 }
 
-.sub-menuHead {
-  top: 91px !important;
+.menu-header ul ul {
+  display: none;
+  position: absolute;
+  height: 50px;
+  background: white;
+  top: 59px;
+  width: 115px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 5px lightgray;
+          box-shadow: 0px 0px 5px lightgray;
 }
 
-@media all and (min-width: 1520) {
-  .sub-menuHead {
-    left: 60% !important;
-  }
+.menu-header ul ul li {
+  padding: 5px;
+  margin-left: -18px;
+  margin-top: 10px;
+}
+
+.menu-header ul ul li a {
+  color: red;
+  z-index: 2;
+  font-size: 18px;
+}
+
+.menu-header ul {
+  position: relative;
+  margin: 0px;
+  margin-top: -10px;
+}
+
+li {
+  margin-left: -10px;
+}
+
+#section {
+  width: 100%;
+  height: 700px;
+  background: white;
+}
+
+#section .insection-block1 {
+  height: 600px;
+  width: 80%;
+  margin-top: 65px;
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+}
+
+#section .insection-block2 {
+  height: 600px;
+  width: 82%;
+  margin-top: 65px;
+}
+
+#section .insection-block2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#section .insection-block2 .insection-upblock {
+  display: inline-block;
+  background-color: rgba(250, 249, 249, 0.8);
+  width: 65%;
+  height: 70%;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+  -webkit-transform: translate(25%, -120%);
+          transform: translate(25%, -120%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 22px;
+  font-family: auto;
+  color: blackgray;
+  color: darkslategrey;
+}
+
+#section .insection-block2 .insection-upblock img {
+  width: 28%;
+  height: 16%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 70%;
+  left: 60%;
+}
+
+#section .insection-block2 .insection-upblock span {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  font-size: 70px;
+  color: #ca0c0c;
+}
+
+.writing {
+  width: 80%;
+  height: 80%;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.writing h1 {
+  font-size: 62px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.writing p {
+  color: gray;
+  margin: 0px;
+  font-family: cursive;
+  width: calc(100% + 90px);
+  font-size: 18px;
+}
+
+.writing h4 {
+  margin: 50px 0px;
+  font-weight: 200;
+}
+
+.view-services {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid red;
+  margin-top: 20px;
+}
+
+#section-kollection {
+  background: white;
+  width: 100%;
+  height: 200px;
+  margin-top: 33px;
+}
+
+#section-kollection .galareya {
+  background: white;
+  width: 80%;
+  height: 150px;
+  -webkit-transform: translateX(14%);
+          transform: translateX(14%);
 }
 
 body {
@@ -461,6 +580,8 @@ body {
 
 .hover:hover {
   background: #ca0c0c;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hover2:hover {
@@ -552,33 +673,6 @@ body {
 
 .col-12 {
   width: 8.33333%;
-}
-
-.sub-menu, .sub-menuHead, .sub-menuAbout, .sub-menuService, .sub-menuSingleS, .sub-menuPortfolio {
-  display: none;
-  background: white;
-  position: fixed;
-  top: 96px;
-  height: 50px;
-  left: 53.1%;
-}
-
-.sub-menu ul, .sub-menuHead ul, .sub-menuAbout ul, .sub-menuService ul, .sub-menuSingleS ul, .sub-menuPortfolio ul {
-  margin-left: -30px;
-}
-
-.sub-menu ul li, .sub-menuHead ul li, .sub-menuAbout ul li, .sub-menuService ul li, .sub-menuSingleS ul li, .sub-menuPortfolio ul li {
-  margin: 8px;
-}
-
-.sub-menu ul li:hover, .sub-menuHead ul li:hover, .sub-menuAbout ul li:hover, .sub-menuService ul li:hover, .sub-menuSingleS ul li:hover, .sub-menuPortfolio ul li:hover {
-  background: none;
-}
-
-.sub-menu ul a, .sub-menuHead ul a, .sub-menuAbout ul a, .sub-menuService ul a, .sub-menuSingleS ul a, .sub-menuPortfolio ul a {
-  color: red;
-  z-index: 2;
-  font-size: 15px;
 }
 
 .btn-overlay, .up-btn-overlay, .next-btn-overlay, .prew-btn-overlay {
@@ -639,6 +733,8 @@ body {
 
 .hover:hover {
   background: #ca0c0c;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hover2:hover {
@@ -730,33 +826,6 @@ body {
 
 .col-12 {
   width: 8.33333%;
-}
-
-.sub-menu, .sub-menuHead, .sub-menuAbout, .sub-menuService, .sub-menuSingleS, .sub-menuPortfolio {
-  display: none;
-  background: white;
-  position: fixed;
-  top: 96px;
-  height: 50px;
-  left: 53.1%;
-}
-
-.sub-menu ul, .sub-menuHead ul, .sub-menuAbout ul, .sub-menuService ul, .sub-menuSingleS ul, .sub-menuPortfolio ul {
-  margin-left: -30px;
-}
-
-.sub-menu ul li, .sub-menuHead ul li, .sub-menuAbout ul li, .sub-menuService ul li, .sub-menuSingleS ul li, .sub-menuPortfolio ul li {
-  margin: 8px;
-}
-
-.sub-menu ul li:hover, .sub-menuHead ul li:hover, .sub-menuAbout ul li:hover, .sub-menuService ul li:hover, .sub-menuSingleS ul li:hover, .sub-menuPortfolio ul li:hover {
-  background: none;
-}
-
-.sub-menu ul a, .sub-menuHead ul a, .sub-menuAbout ul a, .sub-menuService ul a, .sub-menuSingleS ul a, .sub-menuPortfolio ul a {
-  color: red;
-  z-index: 2;
-  font-size: 15px;
 }
 
 .btn-overlay, .up-btn-overlay, .next-btn-overlay, .prew-btn-overlay {
@@ -988,6 +1057,47 @@ body {
   color: white;
 }
 
+.menu-section1 ul ul {
+  display: none;
+  position: absolute;
+  height: 50px;
+  background: white;
+  top: 59px;
+  width: 115px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-section1 ul ul li {
+  padding: 5px;
+  margin-left: -15px;
+  margin-top: 10px;
+}
+
+.menu-section1 ul ul li:hover {
+  background: none;
+}
+
+.menu-section1 ul ul li a {
+  color: red;
+  z-index: 2;
+  font-size: 15px;
+}
+
+.menu-section1 ul {
+  position: relative;
+  margin: 0px;
+  margin-top: -10px;
+}
+
+li {
+  margin-left: -10px;
+}
+
 body {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
@@ -1027,6 +1137,8 @@ body {
 
 .hover:hover {
   background: #ca0c0c;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hover2:hover {
@@ -1120,33 +1232,6 @@ body {
   width: 8.33333%;
 }
 
-.sub-menu, .sub-menuHead, .sub-menuAbout, .sub-menuService, .sub-menuSingleS, .sub-menuPortfolio {
-  display: none;
-  background: white;
-  position: fixed;
-  top: 96px;
-  height: 50px;
-  left: 53.1%;
-}
-
-.sub-menu ul, .sub-menuHead ul, .sub-menuAbout ul, .sub-menuService ul, .sub-menuSingleS ul, .sub-menuPortfolio ul {
-  margin-left: -30px;
-}
-
-.sub-menu ul li, .sub-menuHead ul li, .sub-menuAbout ul li, .sub-menuService ul li, .sub-menuSingleS ul li, .sub-menuPortfolio ul li {
-  margin: 8px;
-}
-
-.sub-menu ul li:hover, .sub-menuHead ul li:hover, .sub-menuAbout ul li:hover, .sub-menuService ul li:hover, .sub-menuSingleS ul li:hover, .sub-menuPortfolio ul li:hover {
-  background: none;
-}
-
-.sub-menu ul a, .sub-menuHead ul a, .sub-menuAbout ul a, .sub-menuService ul a, .sub-menuSingleS ul a, .sub-menuPortfolio ul a {
-  color: red;
-  z-index: 2;
-  font-size: 15px;
-}
-
 .btn-overlay, .up-btn-overlay, .next-btn-overlay, .prew-btn-overlay {
   display: none;
   height: 80px;
@@ -1190,12 +1275,8 @@ body {
   margin: 0px 17px;
 }
 
-ul {
-  margin: 0px;
-  margin-top: -10px;
-}
-
-li {
+.menu-section2 li {
+  position: relative;
   font-size: 13.33333px;
   display: inline-block;
   color: white;
@@ -1203,7 +1284,7 @@ li {
   padding: 15px;
 }
 
-li a {
+.menu-section2 li a {
   color: white;
 }
 
@@ -1242,8 +1323,8 @@ li a {
   margin: 0px auto;
   background: red;
   top: 471px;
-  left: 5px;
-  width: 1200px;
+  left: 10%;
+  width: 1125px;
 }
 
 .letter-section2 h1 {
@@ -1321,8 +1402,31 @@ li a {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.sub-menuService {
-  top: 97px;
+.serviceul {
+  display: none;
+  position: absolute !important;
+  height: 49px;
+  background: white;
+  top: 59px;
+  width: 115px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.serviceul li {
+  padding: 5px;
+  margin-left: -15px;
+  margin-top: 10px;
+}
+
+.serviceul li a {
+  color: red;
+  z-index: 2;
+  font-size: 15px;
 }
 
 body {
@@ -1364,6 +1468,8 @@ body {
 
 .hover:hover {
   background: #ca0c0c;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hover2:hover {
@@ -1455,33 +1561,6 @@ body {
 
 .col-12 {
   width: 8.33333%;
-}
-
-.sub-menu, .sub-menuHead, .sub-menuAbout, .sub-menuService, .sub-menuSingleS, .sub-menuPortfolio {
-  display: none;
-  background: white;
-  position: fixed;
-  top: 96px;
-  height: 50px;
-  left: 53.1%;
-}
-
-.sub-menu ul, .sub-menuHead ul, .sub-menuAbout ul, .sub-menuService ul, .sub-menuSingleS ul, .sub-menuPortfolio ul {
-  margin-left: -30px;
-}
-
-.sub-menu ul li, .sub-menuHead ul li, .sub-menuAbout ul li, .sub-menuService ul li, .sub-menuSingleS ul li, .sub-menuPortfolio ul li {
-  margin: 8px;
-}
-
-.sub-menu ul li:hover, .sub-menuHead ul li:hover, .sub-menuAbout ul li:hover, .sub-menuService ul li:hover, .sub-menuSingleS ul li:hover, .sub-menuPortfolio ul li:hover {
-  background: none;
-}
-
-.sub-menu ul a, .sub-menuHead ul a, .sub-menuAbout ul a, .sub-menuService ul a, .sub-menuSingleS ul a, .sub-menuPortfolio ul a {
-  color: red;
-  z-index: 2;
-  font-size: 15px;
 }
 
 .btn-overlay, .up-btn-overlay, .next-btn-overlay, .prew-btn-overlay {
@@ -1542,6 +1621,8 @@ body {
 
 .hover:hover {
   background: #ca0c0c;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hover2:hover {
@@ -1633,33 +1714,6 @@ body {
 
 .col-12 {
   width: 8.33333%;
-}
-
-.sub-menu, .sub-menuHead, .sub-menuAbout, .sub-menuService, .sub-menuSingleS, .sub-menuPortfolio {
-  display: none;
-  background: white;
-  position: fixed;
-  top: 96px;
-  height: 50px;
-  left: 53.1%;
-}
-
-.sub-menu ul, .sub-menuHead ul, .sub-menuAbout ul, .sub-menuService ul, .sub-menuSingleS ul, .sub-menuPortfolio ul {
-  margin-left: -30px;
-}
-
-.sub-menu ul li, .sub-menuHead ul li, .sub-menuAbout ul li, .sub-menuService ul li, .sub-menuSingleS ul li, .sub-menuPortfolio ul li {
-  margin: 8px;
-}
-
-.sub-menu ul li:hover, .sub-menuHead ul li:hover, .sub-menuAbout ul li:hover, .sub-menuService ul li:hover, .sub-menuSingleS ul li:hover, .sub-menuPortfolio ul li:hover {
-  background: none;
-}
-
-.sub-menu ul a, .sub-menuHead ul a, .sub-menuAbout ul a, .sub-menuService ul a, .sub-menuSingleS ul a, .sub-menuPortfolio ul a {
-  color: red;
-  z-index: 2;
-  font-size: 15px;
 }
 
 .btn-overlay, .up-btn-overlay, .next-btn-overlay, .prew-btn-overlay {
@@ -1890,6 +1944,47 @@ body {
   color: white;
 }
 
+.menu-singleServices ul ul {
+  display: none;
+  position: absolute;
+  height: 50px;
+  background: white;
+  top: 59px;
+  width: 115px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-singleServices ul ul li {
+  padding: 5px;
+  margin-left: -15px;
+  margin-top: 10px;
+}
+
+.menu-singleServices ul ul li:hover {
+  background: none;
+}
+
+.menu-singleServices ul ul li a {
+  color: red;
+  z-index: 2;
+  font-size: 15px;
+}
+
+.menu-singleServices ul {
+  position: relative;
+  margin: 0px;
+  margin-top: -10px;
+}
+
+li {
+  margin-left: -10px;
+}
+
 body {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
@@ -1929,6 +2024,8 @@ body {
 
 .hover:hover {
   background: #ca0c0c;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hover2:hover {
@@ -2020,33 +2117,6 @@ body {
 
 .col-12 {
   width: 8.33333%;
-}
-
-.sub-menu, .sub-menuHead, .sub-menuAbout, .sub-menuService, .sub-menuSingleS, .sub-menuPortfolio {
-  display: none;
-  background: white;
-  position: fixed;
-  top: 96px;
-  height: 50px;
-  left: 53.1%;
-}
-
-.sub-menu ul, .sub-menuHead ul, .sub-menuAbout ul, .sub-menuService ul, .sub-menuSingleS ul, .sub-menuPortfolio ul {
-  margin-left: -30px;
-}
-
-.sub-menu ul li, .sub-menuHead ul li, .sub-menuAbout ul li, .sub-menuService ul li, .sub-menuSingleS ul li, .sub-menuPortfolio ul li {
-  margin: 8px;
-}
-
-.sub-menu ul li:hover, .sub-menuHead ul li:hover, .sub-menuAbout ul li:hover, .sub-menuService ul li:hover, .sub-menuSingleS ul li:hover, .sub-menuPortfolio ul li:hover {
-  background: none;
-}
-
-.sub-menu ul a, .sub-menuHead ul a, .sub-menuAbout ul a, .sub-menuService ul a, .sub-menuSingleS ul a, .sub-menuPortfolio ul a {
-  color: red;
-  z-index: 2;
-  font-size: 15px;
 }
 
 .btn-overlay, .up-btn-overlay, .next-btn-overlay, .prew-btn-overlay {
@@ -2107,6 +2177,8 @@ body {
 
 .hover:hover {
   background: #ca0c0c;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hover2:hover {
@@ -2198,33 +2270,6 @@ body {
 
 .col-12 {
   width: 8.33333%;
-}
-
-.sub-menu, .sub-menuHead, .sub-menuAbout, .sub-menuService, .sub-menuSingleS, .sub-menuPortfolio {
-  display: none;
-  background: white;
-  position: fixed;
-  top: 96px;
-  height: 50px;
-  left: 53.1%;
-}
-
-.sub-menu ul, .sub-menuHead ul, .sub-menuAbout ul, .sub-menuService ul, .sub-menuSingleS ul, .sub-menuPortfolio ul {
-  margin-left: -30px;
-}
-
-.sub-menu ul li, .sub-menuHead ul li, .sub-menuAbout ul li, .sub-menuService ul li, .sub-menuSingleS ul li, .sub-menuPortfolio ul li {
-  margin: 8px;
-}
-
-.sub-menu ul li:hover, .sub-menuHead ul li:hover, .sub-menuAbout ul li:hover, .sub-menuService ul li:hover, .sub-menuSingleS ul li:hover, .sub-menuPortfolio ul li:hover {
-  background: none;
-}
-
-.sub-menu ul a, .sub-menuHead ul a, .sub-menuAbout ul a, .sub-menuService ul a, .sub-menuSingleS ul a, .sub-menuPortfolio ul a {
-  color: red;
-  z-index: 2;
-  font-size: 15px;
 }
 
 .btn-overlay, .up-btn-overlay, .next-btn-overlay, .prew-btn-overlay {
@@ -2459,12 +2504,6 @@ body {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.sub-menuPortfolio {
-  top: 93px !important;
-  -webkit-box-shadow: 0px 0px 5px gray;
-          box-shadow: 0px 0px 5px gray;
-}
-
 #portfolio-section {
   height: 600px;
 }
@@ -2570,6 +2609,49 @@ body {
      object-fit: cover;
 }
 
+.menu-section3 ul ul {
+  display: none;
+  position: absolute;
+  height: 50px;
+  background: white;
+  top: 60px !important;
+  width: 115px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 5px lightgray;
+          box-shadow: 0px 0px 5px lightgray;
+}
+
+.menu-section3 ul ul li {
+  padding: 5px;
+  margin-left: -15px;
+  margin-top: 10px;
+}
+
+.menu-section3 ul ul li:hover {
+  background: none;
+}
+
+.menu-section3 ul ul li a {
+  color: red;
+  z-index: 2;
+  font-size: 15px;
+}
+
+.menu-section3 ul {
+  position: relative;
+  margin: 0px;
+  margin-top: -10px;
+}
+
+li {
+  margin-left: -10px;
+}
+
 body {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
@@ -2609,6 +2691,8 @@ body {
 
 .hover:hover {
   background: #ca0c0c;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .hover2:hover {
@@ -2700,33 +2784,6 @@ body {
 
 .col-12 {
   width: 8.33333%;
-}
-
-.sub-menu, .sub-menuHead, .sub-menuAbout, .sub-menuService, .sub-menuSingleS, .sub-menuPortfolio {
-  display: none;
-  background: white;
-  position: fixed;
-  top: 96px;
-  height: 50px;
-  left: 53.1%;
-}
-
-.sub-menu ul, .sub-menuHead ul, .sub-menuAbout ul, .sub-menuService ul, .sub-menuSingleS ul, .sub-menuPortfolio ul {
-  margin-left: -30px;
-}
-
-.sub-menu ul li, .sub-menuHead ul li, .sub-menuAbout ul li, .sub-menuService ul li, .sub-menuSingleS ul li, .sub-menuPortfolio ul li {
-  margin: 8px;
-}
-
-.sub-menu ul li:hover, .sub-menuHead ul li:hover, .sub-menuAbout ul li:hover, .sub-menuService ul li:hover, .sub-menuSingleS ul li:hover, .sub-menuPortfolio ul li:hover {
-  background: none;
-}
-
-.sub-menu ul a, .sub-menuHead ul a, .sub-menuAbout ul a, .sub-menuService ul a, .sub-menuSingleS ul a, .sub-menuPortfolio ul a {
-  color: red;
-  z-index: 2;
-  font-size: 15px;
 }
 
 .btn-overlay, .up-btn-overlay, .next-btn-overlay, .prew-btn-overlay {

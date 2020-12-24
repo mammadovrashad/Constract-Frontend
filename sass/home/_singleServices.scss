@@ -142,6 +142,33 @@
         }
         }
 }
-.sub-menuSingleS{
-    @extend .sub-menu;
+.menu-singleServices ul ul{
+    display:none;
+    position: absolute;
+    height: 50px;
+    background: white;
+    top: 59px;
+    width: 115px;
+    justify-content: flex-end;
+    align-items: center;
+    li {
+    padding: 5px;
+    margin-left: -15px;
+    margin-top:10px;
+    &:hover{
+        background: none;}
+    a{
+    color:red;
+    z-index: 2;
+    font-size: 15px;
+    }
+}}
+
+.menu-singleServices  ul {
+    position: relative;
+    margin: 0px;
+    margin-top: -10px;
+}
+    li{
+        margin-left:-10px; 
 }

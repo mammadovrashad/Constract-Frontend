@@ -22,11 +22,9 @@
                 @extend .full-center;
             }
                 .menu-section2{
-                    margin:0px 17px;}
-                    ul{
-                         margin:0px;
-                         margin-top:-$margin/6;}
-                        li{
+                    margin:0px 17px;
+                        li{ 
+                            position:relative;
                             font-size:$font-size/6;
                             display:inline-block;
                             color:$color-white;
@@ -35,7 +33,7 @@
                             a{
                             color:$color-white;
                             }
-                            }
+                            }}
                 .icon-section2{
                     margin-top:$margin/-6;
                 }
@@ -65,8 +63,8 @@
      margin:0px auto;
      background:$color-red; 
      top:471px;
-     left:5px;
-     width:$width;
+     left:10%;
+     width:(1125px);
     }
  .letter-section2 h1 {
      @extend .width-100;
@@ -142,7 +140,23 @@
         height:85px;
         background-color: rgba($color:white, $alpha:0.8);
     }
-    .sub-menuService{
-        top:97px;
-       @extend .sub-menu;
-    }
+.serviceul{
+    display:none;
+    position: absolute!important;
+    height: 49px;
+    background: white;
+    top: 59px;
+    width: 115px;
+    justify-content: flex-end;
+    align-items: center;
+    li {
+        padding: 5px;
+        margin-left: -15px;
+        margin-top:10px;
+        a{
+        color:red;
+        z-index: 2;
+        font-size: 15px;
+        }}
+}
+    

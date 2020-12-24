@@ -73,12 +73,12 @@ li1.addEventListener('click',Begin1)
 li1.addEventListener('click',Begin2)
 li1.addEventListener('click',Clear)
 
-let subMenuabout=document.querySelector(".sub-menuAbout")
-console.log(subMenuabout)
+let serviceUl=document.querySelectorAll('ul')[1]
+console.log(serviceUl)
 let li2=document.querySelectorAll('.li')[2]
 console.log(li2)
 li2.addEventListener('mouseover',function(){
-    subMenuabout.style.display="block"
+    serviceUl.style.display="block"
 })
 li2.addEventListener('mouseout',function(){
-    subMenuabout.style.display="none"})
+    serviceUl.style.display="none"})
