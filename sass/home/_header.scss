@@ -1,26 +1,78 @@
 @import '../variables';
 @import '../general';
-
-#header{
-    background: url(../img/2.jpg); 
-    @extend .background-img;
-    height:$height/1.5;
-    @extend .width-100;
-    // max-width: 100%;
+body{
+    width: 100%;
+    min-height:100vh;
+    font-size: 18px;
+    font-family: poppins;
 }
-    .over-lay-header{
-         position:absolute;
-         top:0;
-         left:0;
-         z-index:1;
-         height:$height/1.5;
-         background-size:cover ;
-         background-color: rgba(0,0,0,0.4);
+
+#slider{
+    min-width: 6080;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+#slider-countainer{
+    width: fit-content;
+    display: flex !important;
+    height: 800px;
+    position: relative;
+    z-index: -1;
+    left: 0px;
+    background-attachment: fixed;
+    transition: 0.1s width;
+}
+#slider1{
+    background: url(../img/home/2.jpg);
+    position: relative;
+    min-width:1520px;
+    height:800px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#slider2{
+    background: url(../img/home/18.jpg);
+    position: relative;
+    display: inline-block;
+    min-width: 1520px;
+    height:800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#slider3{
+    background: url(../img/home/19.jpg);
+    position: relative;
+    display: inline-block;
+    min-width: 1520px;
+    height:800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#slider4{
+    background: url(../img/home/20.jpg);
+    position:relative;
+    display: inline-block;
+    min-width:1520px;
+    height:800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.over-lay-header{
+         @extend .overlay-All
         }
-         .largeblock-header{
-             position: relative;
-             z-index:2;}
-            .rightblock-header{ 
+.largeblock-header{
+    // background: none;
+    position: absolute;;
+    z-index:5;
+}
+  .rightblock-header{ 
                 @extend .full-center;
             }
                 .menu-header{
@@ -28,6 +80,7 @@
                     width:100% ;}
                     ul{
                         position: relative;
+                        z-index: 10;
                          margin:0px;
                          list-style: none;
                          margin-top:-$margin/6;}
@@ -62,124 +115,74 @@
                         color:$color-white;
                         box-shadow:0px 0px 2px;
                     }
+                    .line{
+                        top:790px;
+                        left:150px;
+                        width:79%;
+                        height:$height/120;
+                        margin:0px auto;
+                        background:$color-red;
+                       }
  .logo-header img{
-    max-height:120px;
-    max-width:100%;
-    margin:0px $margin/2;
-    padding:$padding/4;
-    margin-top:-10px;
+    @extend .logoheader-img
  }
- .line{
-     top:790px;
-     left:150px;
-     width:79%;
-     height:$height/120;
-     margin:0px auto;
-     background:$color-red;
-    }
  .letter h1,h5{
-     @extend .width-100;
-     color:$color-white;
-     @extend .height-100;
-     margin:0px;
-     font-weight: 50px;
+     @extend .letter-h1-h5
  }
 .letter{
-     top:320px;
-     left:500px;
-     font-size:$font-size/4;
-     @extend .transition
-    }
-    .box{
-        z-index:-1;
-        top: 33.5%;
-        left: 45.1%;
-        width: 223px;
-        height:$height/60;
-        padding:$padding/30;
-        background-color:$color-darkred;
-    }
+    @extend .letter-All
+}
+
+
+.box{
+    @extend .box-All
+}
         .letter h1{
-            font-size:$font-size;
-            font: weight 800;
+            @extend .letter-h1-All
         }
         .letter p {
-            color:rgba(211, 211, 211, 0.897);
-            @extend .width-100;
-            @extend .height-100;
-            font-weight:400px;
-            margin:$margin/6 0px;
-            padding:$padding/6 $padding/-6;
-            font-family:cursive;}
+            @extend .letter-p-All
+        }
         .tags{
-            width: 18%;
-            background: none;
-            position: relative;
-            padding: 6px;
-            top:30px;
-            left:0px;
+            @extend .tags-All
            }
             .tags h5{
-            padding:$padding/4 0px;
-            top:-35px;
-            left:0px;
-            font-weight: 100;
-            border-bottom:2px solid red;
-            a{
-                color:$color-white;
-                text-decoration:none;
-            }
+            @extend .tags-h5-All
         }
 
         [class^="button"]{
           outline: none;
           }
 .up-logo-header{
-    top: 260px;
-    left: 70px;
-    display: inline-block;
-    width: 265px;
-    height: 360px;
-    transition: all  1.5s ease;
+    @extend .up-logo-header-All
     }
     .up-logo-header img{
-        @extend .width-100;
-        @extend .height-100;
+       @extend .up-logo-header-img-All
     }
     .up-page{  
-        left: 0px;
-        top: 275px;
-        height:85px;
-        background-color: rgba($color:white, $alpha:0.8);
+      @extend .up-page-All
     }
     .sentence{
-        height: 90px;
+       @extend .sentence-All
     }
     .sentence h4{
-        color:black;
-        text-align: center;
-        font-family:Arial, Helvetica, sans-serif;
+       @extend .sentence-h4-All
         }
         .button{
-            background:$color-darkred;
-            color:$color-white;
-            width: 110px;
-            @extend .height-100;
-            cursor: pointer;
-            border:none;
-            font-size:20px;
-            &:hover{
-                background-color:$color-white;
-                color:$color-darkred;}
+           @extend .button-All
         }
 .right-buttons{
     display: flex;
     justify-content: flex-end;
-    position: relative;
+    position: absolute;
     top: 715px;
-    height:85px; }
+    width: 175px;
+    z-index:1;
+    height: 85px;
+    right: -5px;
+ }
     .right-buttons button{
-        width:5.5%;
+        width:90px;
         background:$color-white;
         font-size:20px;
         &:hover {
@@ -191,7 +194,7 @@
     .right-buttons button i{
         color: black;}
 .under-button {
-    z-index:2;
+    z-index:4;
     top:740px;
     padding-left: 15px;
     box-sizing: border-box;}
@@ -319,5 +322,144 @@
     transform: translateX(14%);
     }
 }
+.over-lay-header2{
+    @extend .overlay-All
+   }
+.logo-header2 img{
+    @extend .logoheader-img
+ }
+ .letter2 h1,h5{
+     @extend .letter-h1-h5
+ }
+.letter2{
+    @extend .letter-All
+}
+.box2{
+    @extend .box-All
+}
+        .letter2 h1{
+            @extend .letter-h1-All
+        }
+        .letter2 p {
+            @extend .letter-p-All
+        }
+        .tags2{
+            @extend .tags-All
+           }
+            .tags2 h5{
+            @extend .tags-h5-All
+        }
+
+.up-logo-header2{
+    @extend .up-logo-header-All
+    }
+.up-logo-header2 img{
+       @extend .up-logo-header-img-All
+    }
+    .up-page2{  
+      @extend .up-page-All
+    }
+    .sentence2{
+       @extend .sentence-All
+    }
+    .sentence2 h4{
+       @extend .sentence-h4-All
+        }
+        .button2{
+           @extend .button-All
+        }
 
 
+.over-lay-header3{
+            @extend .overlay-All
+           }
+.logo-header3 img{
+            @extend .logoheader-img
+         }
+         .letter3 h1,h5{
+             @extend .letter-h1-h5
+         }
+        .letter3{
+            @extend .letter-All
+        }
+        .box3{
+            @extend .box-All
+        }
+                .letter3 h1{
+                    @extend .letter-h1-All
+                }
+                .letter3 p {
+                    @extend .letter-p-All
+                }
+                .tags3{
+                    @extend .tags-All
+                   }
+                    .tags3 h5{
+                    @extend .tags-h5-All
+                }
+        .up-logo-header3{
+            @extend .up-logo-header-All
+            }        
+.up-logo-header3 img{
+    @extend .up-logo-header-img-All
+}
+.up-page3{  
+    @extend .up-page-All
+}
+.sentence3{
+         @extend .sentence-All
+ }
+.sentence3 h4{
+     @extend .sentence-h4-All
+     }
+     .button3{
+       @extend .button-All
+     }
+
+
+
+.over-lay-header4{
+        @extend .overlay-All
+       }
+.logo-header4 img{
+        @extend .logoheader-img
+     }
+     .letter4 h1,h5{
+         @extend .letter-h1-h5
+     }
+    .letter4{
+        @extend .letter-All
+    }
+    .box4{
+        @extend .box-All
+    }
+            .letter4 h1{
+                @extend .letter-h1-All
+            }
+            .letter4 p {
+                @extend .letter-p-All
+            }
+            .tags4{
+                @extend .tags-All
+               }
+                .tags4 h5{
+                @extend .tags-h5-All
+            }
+    .up-logo-header4{
+        @extend .up-logo-header-All
+        }        
+.up-logo-header4 img{
+@extend .up-logo-header-img-All
+}
+.up-page4{  
+@extend .up-page-All
+}
+.sentence4{
+     @extend .sentence-All
+}
+.sentence4 h4{
+ @extend .sentence-h4-All
+ }
+ .button4{
+   @extend .button-All
+ }

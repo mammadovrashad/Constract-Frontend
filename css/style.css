@@ -45,7 +45,7 @@ body {
   background: #ca0c0c;
 }
 
-.transition, .letter, .all-p, .letter-section2 {
+.transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
@@ -62,15 +62,15 @@ body {
           justify-content: center;
 }
 
-.width-100, #header, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.width-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.height-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .button-All, .button, .button2, .button3, .button4, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   height: 100%;
 }
 
-.background-img, #header, #section1, #section2, #singleServices, #section3 {
+.background-img, #section1, #section2, #singleServices, #section3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -151,24 +151,200 @@ body {
   font-size: 16px;
 }
 
-#header {
-  background: url(../img/2.jpg);
-  height: 800px;
-}
-
-.over-lay-header {
+.overlay-All, .over-lay-header, .over-lay-header2, .over-lay-header3, .over-lay-header4 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
   height: 800px;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.largeblock-header {
+.logoheader-img, .logo-header img, .logo-header2 img, .logo-header3 img, .logo-header4 img {
+  max-height: 120px;
+  max-width: 100%;
+  margin: 0px 30px;
+  padding: 15px;
+  margin-top: -10px;
+}
+
+.letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1 {
+  color: white;
+  margin: 0px;
+  font-weight: 50px;
+}
+
+.letter-All, .letter, .letter2, .letter3, .letter4 {
+  top: 320px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.box-All, .box, .box2, .box3, .box4 {
+  z-index: -1;
+  top: 33.5%;
+  left: 45.1%;
+  width: 223px;
+  height: 20px;
+  padding: 2px;
+  background-color: #ca0c0c;
+}
+
+.letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
+  font-size: 80px;
+  font: weight 800;
+}
+
+.letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p {
+  color: rgba(211, 211, 211, 0.897);
+  font-weight: 400px;
+  margin: 10px 0px;
+  padding: 10px -10px;
+  font-family: cursive;
+}
+
+.tags-All, .tags, .tags2, .tags3, .tags4 {
+  width: 18%;
+  background: none;
   position: relative;
-  z-index: 2;
+  padding: 6px;
+  top: 30px;
+  left: 0px;
+}
+
+.tags-h5-All, .tags h5, .tags2 h5, .tags3 h5, .tags4 h5 {
+  padding: 15px 0px;
+  top: -35px;
+  left: 0px;
+  font-weight: 100;
+  border-bottom: 2px solid red;
+}
+
+.tags-h5-All a, .tags h5 a, .tags2 h5 a, .tags3 h5 a, .tags4 h5 a {
+  color: white;
+  text-decoration: none;
+}
+
+.up-logo-header-All, .up-logo-header, .up-logo-header2, .up-logo-header3, .up-logo-header4 {
+  top: 260px;
+  left: 70px;
+  z-index: 1;
+  display: inline-block;
+  width: 265px;
+  height: 360px;
+  -webkit-transition: all  1.5s ease;
+  transition: all  1.5s ease;
+}
+
+.up-page-All, .up-page, .up-page2, .up-page3, .up-page4 {
+  left: 0px;
+  top: 275px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sentence-All, .sentence, .sentence2, .sentence3, .sentence4 {
+  height: 90px;
+}
+
+.sentence-h4-All, .sentence h4, .sentence2 h4, .sentence3 h4, .sentence4 h4 {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-All, .button, .button2, .button3, .button4 {
+  background: #ca0c0c;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
+  background-color: white;
+  color: #ca0c0c;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 18px;
+  font-family: poppins;
+}
+
+#slider {
+  min-width: 6080;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+#slider-countainer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 800px;
+  position: relative;
+  z-index: -1;
+  left: 0px;
+  background-attachment: fixed;
+  -webkit-transition: 0.1s width;
+  transition: 0.1s width;
+}
+
+#slider1 {
+  background: url(../img/home/2.jpg);
+  position: relative;
+  min-width: 1520px;
+  height: 800px;
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#slider2 {
+  background: url(../img/home/18.jpg);
+  position: relative;
+  display: inline-block;
+  min-width: 1520px;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#slider3 {
+  background: url(../img/home/19.jpg);
+  position: relative;
+  display: inline-block;
+  min-width: 1520px;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#slider4 {
+  background: url(../img/home/20.jpg);
+  position: relative;
+  display: inline-block;
+  min-width: 1520px;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.largeblock-header {
+  position: absolute;
+  z-index: 5;
 }
 
 .menu-header {
@@ -178,6 +354,7 @@ body {
 
 ul {
   position: relative;
+  z-index: 10;
   margin: 0px;
   list-style: none;
   margin-top: -10px;
@@ -221,14 +398,6 @@ ul {
           box-shadow: 0px 0px 2px;
 }
 
-.logo-header img {
-  max-height: 120px;
-  max-width: 100%;
-  margin: 0px 30px;
-  padding: 15px;
-  margin-top: -10px;
-}
-
 .line {
   top: 790px;
   left: 150px;
@@ -238,106 +407,8 @@ ul {
   background: red;
 }
 
-.letter h1, h5 {
-  color: white;
-  margin: 0px;
-  font-weight: 50px;
-}
-
-.letter {
-  top: 320px;
-  left: 500px;
-  font-size: 20px;
-}
-
-.box {
-  z-index: -1;
-  top: 33.5%;
-  left: 45.1%;
-  width: 223px;
-  height: 20px;
-  padding: 2px;
-  background-color: #ca0c0c;
-}
-
-.letter h1 {
-  font-size: 80px;
-  font: weight 800;
-}
-
-.letter p {
-  color: rgba(211, 211, 211, 0.897);
-  font-weight: 400px;
-  margin: 10px 0px;
-  padding: 10px -10px;
-  font-family: cursive;
-}
-
-.tags {
-  width: 18%;
-  background: none;
-  position: relative;
-  padding: 6px;
-  top: 30px;
-  left: 0px;
-}
-
-.tags h5 {
-  padding: 15px 0px;
-  top: -35px;
-  left: 0px;
-  font-weight: 100;
-  border-bottom: 2px solid red;
-}
-
-.tags h5 a {
-  color: white;
-  text-decoration: none;
-}
-
 [class^="button"] {
   outline: none;
-}
-
-.up-logo-header {
-  top: 260px;
-  left: 70px;
-  display: inline-block;
-  width: 265px;
-  height: 360px;
-  -webkit-transition: all  1.5s ease;
-  transition: all  1.5s ease;
-}
-
-.up-page {
-  left: 0px;
-  top: 275px;
-  height: 85px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.sentence {
-  height: 90px;
-}
-
-.sentence h4 {
-  color: black;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.button {
-  background: #ca0c0c;
-  color: white;
-  width: 110px;
-  cursor: pointer;
-  border: none;
-  font-size: 20px;
-}
-
-.button:hover {
-  background-color: white;
-  color: #ca0c0c;
 }
 
 .right-buttons {
@@ -347,13 +418,16 @@ ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: relative;
+  position: absolute;
   top: 715px;
+  width: 175px;
+  z-index: 1;
   height: 85px;
+  right: -5px;
 }
 
 .right-buttons button {
-  width: 5.5%;
+  width: 90px;
   background: white;
   font-size: 20px;
 }
@@ -371,7 +445,7 @@ ul {
 }
 
 .under-button {
-  z-index: 2;
+  z-index: 4;
   top: 740px;
   padding-left: 15px;
   -webkit-box-sizing: border-box;
@@ -588,7 +662,7 @@ body {
   background: #ca0c0c;
 }
 
-.transition, .letter, .all-p, .letter-section2 {
+.transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
@@ -605,15 +679,15 @@ body {
           justify-content: center;
 }
 
-.width-100, #header, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.width-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.height-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .button-All, .button, .button2, .button3, .button4, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   height: 100%;
 }
 
-.background-img, #header, #section1, #section2, #singleServices, #section3 {
+.background-img, #section1, #section2, #singleServices, #section3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -692,6 +766,123 @@ body {
 
 .btn-overlay p, .up-btn-overlay p, .next-btn-overlay p, .prew-btn-overlay p {
   font-size: 16px;
+}
+
+.overlay-All, .over-lay-header, .over-lay-header2, .over-lay-header3, .over-lay-header4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 800px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logoheader-img, .logo-header img, .logo-header2 img, .logo-header3 img, .logo-header4 img {
+  max-height: 120px;
+  max-width: 100%;
+  margin: 0px 30px;
+  padding: 15px;
+  margin-top: -10px;
+}
+
+.letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1 {
+  color: white;
+  margin: 0px;
+  font-weight: 50px;
+}
+
+.letter-All, .letter, .letter2, .letter3, .letter4 {
+  top: 320px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.box-All, .box, .box2, .box3, .box4 {
+  z-index: -1;
+  top: 33.5%;
+  left: 45.1%;
+  width: 223px;
+  height: 20px;
+  padding: 2px;
+  background-color: #ca0c0c;
+}
+
+.letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
+  font-size: 80px;
+  font: weight 800;
+}
+
+.letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p {
+  color: rgba(211, 211, 211, 0.897);
+  font-weight: 400px;
+  margin: 10px 0px;
+  padding: 10px -10px;
+  font-family: cursive;
+}
+
+.tags-All, .tags, .tags2, .tags3, .tags4 {
+  width: 18%;
+  background: none;
+  position: relative;
+  padding: 6px;
+  top: 30px;
+  left: 0px;
+}
+
+.tags-h5-All, .tags h5, .tags2 h5, .tags3 h5, .tags4 h5 {
+  padding: 15px 0px;
+  top: -35px;
+  left: 0px;
+  font-weight: 100;
+  border-bottom: 2px solid red;
+}
+
+.tags-h5-All a, .tags h5 a, .tags2 h5 a, .tags3 h5 a, .tags4 h5 a {
+  color: white;
+  text-decoration: none;
+}
+
+.up-logo-header-All, .up-logo-header, .up-logo-header2, .up-logo-header3, .up-logo-header4 {
+  top: 260px;
+  left: 70px;
+  z-index: 1;
+  display: inline-block;
+  width: 265px;
+  height: 360px;
+  -webkit-transition: all  1.5s ease;
+  transition: all  1.5s ease;
+}
+
+.up-page-All, .up-page, .up-page2, .up-page3, .up-page4 {
+  left: 0px;
+  top: 275px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sentence-All, .sentence, .sentence2, .sentence3, .sentence4 {
+  height: 90px;
+}
+
+.sentence-h4-All, .sentence h4, .sentence2 h4, .sentence3 h4, .sentence4 h4 {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-All, .button, .button2, .button3, .button4 {
+  background: #ca0c0c;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
+  background-color: white;
+  color: #ca0c0c;
 }
 
 body {
@@ -741,7 +932,7 @@ body {
   background: #ca0c0c;
 }
 
-.transition, .letter, .all-p, .letter-section2 {
+.transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
@@ -758,15 +949,15 @@ body {
           justify-content: center;
 }
 
-.width-100, #header, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.width-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.height-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .button-All, .button, .button2, .button3, .button4, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   height: 100%;
 }
 
-.background-img, #header, #section1, #section2, #singleServices, #section3 {
+.background-img, #section1, #section2, #singleServices, #section3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -845,6 +1036,123 @@ body {
 
 .btn-overlay p, .up-btn-overlay p, .next-btn-overlay p, .prew-btn-overlay p {
   font-size: 16px;
+}
+
+.overlay-All, .over-lay-header, .over-lay-header2, .over-lay-header3, .over-lay-header4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 800px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logoheader-img, .logo-header img, .logo-header2 img, .logo-header3 img, .logo-header4 img {
+  max-height: 120px;
+  max-width: 100%;
+  margin: 0px 30px;
+  padding: 15px;
+  margin-top: -10px;
+}
+
+.letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1 {
+  color: white;
+  margin: 0px;
+  font-weight: 50px;
+}
+
+.letter-All, .letter, .letter2, .letter3, .letter4 {
+  top: 320px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.box-All, .box, .box2, .box3, .box4 {
+  z-index: -1;
+  top: 33.5%;
+  left: 45.1%;
+  width: 223px;
+  height: 20px;
+  padding: 2px;
+  background-color: #ca0c0c;
+}
+
+.letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
+  font-size: 80px;
+  font: weight 800;
+}
+
+.letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p {
+  color: rgba(211, 211, 211, 0.897);
+  font-weight: 400px;
+  margin: 10px 0px;
+  padding: 10px -10px;
+  font-family: cursive;
+}
+
+.tags-All, .tags, .tags2, .tags3, .tags4 {
+  width: 18%;
+  background: none;
+  position: relative;
+  padding: 6px;
+  top: 30px;
+  left: 0px;
+}
+
+.tags-h5-All, .tags h5, .tags2 h5, .tags3 h5, .tags4 h5 {
+  padding: 15px 0px;
+  top: -35px;
+  left: 0px;
+  font-weight: 100;
+  border-bottom: 2px solid red;
+}
+
+.tags-h5-All a, .tags h5 a, .tags2 h5 a, .tags3 h5 a, .tags4 h5 a {
+  color: white;
+  text-decoration: none;
+}
+
+.up-logo-header-All, .up-logo-header, .up-logo-header2, .up-logo-header3, .up-logo-header4 {
+  top: 260px;
+  left: 70px;
+  z-index: 1;
+  display: inline-block;
+  width: 265px;
+  height: 360px;
+  -webkit-transition: all  1.5s ease;
+  transition: all  1.5s ease;
+}
+
+.up-page-All, .up-page, .up-page2, .up-page3, .up-page4 {
+  left: 0px;
+  top: 275px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sentence-All, .sentence, .sentence2, .sentence3, .sentence4 {
+  height: 90px;
+}
+
+.sentence-h4-All, .sentence h4, .sentence2 h4, .sentence3 h4, .sentence4 h4 {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-All, .button, .button2, .button3, .button4 {
+  background: #ca0c0c;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
+  background-color: white;
+  color: #ca0c0c;
 }
 
 .over-lay, .over-lay-section1, .over-lay-singleServices {
@@ -1145,7 +1453,7 @@ body {
   background: #ca0c0c;
 }
 
-.transition, .letter, .all-p, .letter-section2 {
+.transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
@@ -1162,15 +1470,15 @@ body {
           justify-content: center;
 }
 
-.width-100, #header, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.width-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.height-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .button-All, .button, .button2, .button3, .button4, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   height: 100%;
 }
 
-.background-img, #header, #section1, #section2, #singleServices, #section3 {
+.background-img, #section1, #section2, #singleServices, #section3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1249,6 +1557,129 @@ body {
 
 .btn-overlay p, .up-btn-overlay p, .next-btn-overlay p, .prew-btn-overlay p {
   font-size: 16px;
+}
+
+.overlay-All, .over-lay-header, .over-lay-header2, .over-lay-header3, .over-lay-header4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 800px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logoheader-img, .logo-header img, .logo-header2 img, .logo-header3 img, .logo-header4 img {
+  max-height: 120px;
+  max-width: 100%;
+  margin: 0px 30px;
+  padding: 15px;
+  margin-top: -10px;
+}
+
+.letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1 {
+  color: white;
+  margin: 0px;
+  font-weight: 50px;
+}
+
+.letter-All, .letter, .letter2, .letter3, .letter4 {
+  top: 320px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.box-All, .box, .box2, .box3, .box4 {
+  z-index: -1;
+  top: 33.5%;
+  left: 45.1%;
+  width: 223px;
+  height: 20px;
+  padding: 2px;
+  background-color: #ca0c0c;
+}
+
+.letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
+  font-size: 80px;
+  font: weight 800;
+}
+
+.letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p {
+  color: rgba(211, 211, 211, 0.897);
+  font-weight: 400px;
+  margin: 10px 0px;
+  padding: 10px -10px;
+  font-family: cursive;
+}
+
+.tags-All, .tags, .tags2, .tags3, .tags4 {
+  width: 18%;
+  background: none;
+  position: relative;
+  padding: 6px;
+  top: 30px;
+  left: 0px;
+}
+
+.tags-h5-All, .tags h5, .tags2 h5, .tags3 h5, .tags4 h5 {
+  padding: 15px 0px;
+  top: -35px;
+  left: 0px;
+  font-weight: 100;
+  border-bottom: 2px solid red;
+}
+
+.tags-h5-All a, .tags h5 a, .tags2 h5 a, .tags3 h5 a, .tags4 h5 a {
+  color: white;
+  text-decoration: none;
+}
+
+.up-logo-header-All, .up-logo-header, .up-logo-header2, .up-logo-header3, .up-logo-header4 {
+  top: 260px;
+  left: 70px;
+  z-index: 1;
+  display: inline-block;
+  width: 265px;
+  height: 360px;
+  -webkit-transition: all  1.5s ease;
+  transition: all  1.5s ease;
+}
+
+.up-page-All, .up-page, .up-page2, .up-page3, .up-page4 {
+  left: 0px;
+  top: 275px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sentence-All, .sentence, .sentence2, .sentence3, .sentence4 {
+  height: 90px;
+}
+
+.sentence-h4-All, .sentence h4, .sentence2 h4, .sentence3 h4, .sentence4 h4 {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-All, .button, .button2, .button3, .button4 {
+  background: #ca0c0c;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
+  background-color: white;
+  color: #ca0c0c;
+}
+
+bod {
+  width: 100vw;
+  height: 100vh;
+  font-size: 18px;
 }
 
 #section2 {
@@ -1476,7 +1907,7 @@ body {
   background: #ca0c0c;
 }
 
-.transition, .letter, .all-p, .letter-section2 {
+.transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
@@ -1493,15 +1924,15 @@ body {
           justify-content: center;
 }
 
-.width-100, #header, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.width-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.height-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .button-All, .button, .button2, .button3, .button4, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   height: 100%;
 }
 
-.background-img, #header, #section1, #section2, #singleServices, #section3 {
+.background-img, #section1, #section2, #singleServices, #section3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1580,6 +2011,123 @@ body {
 
 .btn-overlay p, .up-btn-overlay p, .next-btn-overlay p, .prew-btn-overlay p {
   font-size: 16px;
+}
+
+.overlay-All, .over-lay-header, .over-lay-header2, .over-lay-header3, .over-lay-header4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 800px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logoheader-img, .logo-header img, .logo-header2 img, .logo-header3 img, .logo-header4 img {
+  max-height: 120px;
+  max-width: 100%;
+  margin: 0px 30px;
+  padding: 15px;
+  margin-top: -10px;
+}
+
+.letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1 {
+  color: white;
+  margin: 0px;
+  font-weight: 50px;
+}
+
+.letter-All, .letter, .letter2, .letter3, .letter4 {
+  top: 320px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.box-All, .box, .box2, .box3, .box4 {
+  z-index: -1;
+  top: 33.5%;
+  left: 45.1%;
+  width: 223px;
+  height: 20px;
+  padding: 2px;
+  background-color: #ca0c0c;
+}
+
+.letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
+  font-size: 80px;
+  font: weight 800;
+}
+
+.letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p {
+  color: rgba(211, 211, 211, 0.897);
+  font-weight: 400px;
+  margin: 10px 0px;
+  padding: 10px -10px;
+  font-family: cursive;
+}
+
+.tags-All, .tags, .tags2, .tags3, .tags4 {
+  width: 18%;
+  background: none;
+  position: relative;
+  padding: 6px;
+  top: 30px;
+  left: 0px;
+}
+
+.tags-h5-All, .tags h5, .tags2 h5, .tags3 h5, .tags4 h5 {
+  padding: 15px 0px;
+  top: -35px;
+  left: 0px;
+  font-weight: 100;
+  border-bottom: 2px solid red;
+}
+
+.tags-h5-All a, .tags h5 a, .tags2 h5 a, .tags3 h5 a, .tags4 h5 a {
+  color: white;
+  text-decoration: none;
+}
+
+.up-logo-header-All, .up-logo-header, .up-logo-header2, .up-logo-header3, .up-logo-header4 {
+  top: 260px;
+  left: 70px;
+  z-index: 1;
+  display: inline-block;
+  width: 265px;
+  height: 360px;
+  -webkit-transition: all  1.5s ease;
+  transition: all  1.5s ease;
+}
+
+.up-page-All, .up-page, .up-page2, .up-page3, .up-page4 {
+  left: 0px;
+  top: 275px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sentence-All, .sentence, .sentence2, .sentence3, .sentence4 {
+  height: 90px;
+}
+
+.sentence-h4-All, .sentence h4, .sentence2 h4, .sentence3 h4, .sentence4 h4 {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-All, .button, .button2, .button3, .button4 {
+  background: #ca0c0c;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
+  background-color: white;
+  color: #ca0c0c;
 }
 
 body {
@@ -1629,7 +2177,7 @@ body {
   background: #ca0c0c;
 }
 
-.transition, .letter, .all-p, .letter-section2 {
+.transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
@@ -1646,15 +2194,15 @@ body {
           justify-content: center;
 }
 
-.width-100, #header, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.width-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.height-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .button-All, .button, .button2, .button3, .button4, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   height: 100%;
 }
 
-.background-img, #header, #section1, #section2, #singleServices, #section3 {
+.background-img, #section1, #section2, #singleServices, #section3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1733,6 +2281,123 @@ body {
 
 .btn-overlay p, .up-btn-overlay p, .next-btn-overlay p, .prew-btn-overlay p {
   font-size: 16px;
+}
+
+.overlay-All, .over-lay-header, .over-lay-header2, .over-lay-header3, .over-lay-header4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 800px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logoheader-img, .logo-header img, .logo-header2 img, .logo-header3 img, .logo-header4 img {
+  max-height: 120px;
+  max-width: 100%;
+  margin: 0px 30px;
+  padding: 15px;
+  margin-top: -10px;
+}
+
+.letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1 {
+  color: white;
+  margin: 0px;
+  font-weight: 50px;
+}
+
+.letter-All, .letter, .letter2, .letter3, .letter4 {
+  top: 320px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.box-All, .box, .box2, .box3, .box4 {
+  z-index: -1;
+  top: 33.5%;
+  left: 45.1%;
+  width: 223px;
+  height: 20px;
+  padding: 2px;
+  background-color: #ca0c0c;
+}
+
+.letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
+  font-size: 80px;
+  font: weight 800;
+}
+
+.letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p {
+  color: rgba(211, 211, 211, 0.897);
+  font-weight: 400px;
+  margin: 10px 0px;
+  padding: 10px -10px;
+  font-family: cursive;
+}
+
+.tags-All, .tags, .tags2, .tags3, .tags4 {
+  width: 18%;
+  background: none;
+  position: relative;
+  padding: 6px;
+  top: 30px;
+  left: 0px;
+}
+
+.tags-h5-All, .tags h5, .tags2 h5, .tags3 h5, .tags4 h5 {
+  padding: 15px 0px;
+  top: -35px;
+  left: 0px;
+  font-weight: 100;
+  border-bottom: 2px solid red;
+}
+
+.tags-h5-All a, .tags h5 a, .tags2 h5 a, .tags3 h5 a, .tags4 h5 a {
+  color: white;
+  text-decoration: none;
+}
+
+.up-logo-header-All, .up-logo-header, .up-logo-header2, .up-logo-header3, .up-logo-header4 {
+  top: 260px;
+  left: 70px;
+  z-index: 1;
+  display: inline-block;
+  width: 265px;
+  height: 360px;
+  -webkit-transition: all  1.5s ease;
+  transition: all  1.5s ease;
+}
+
+.up-page-All, .up-page, .up-page2, .up-page3, .up-page4 {
+  left: 0px;
+  top: 275px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sentence-All, .sentence, .sentence2, .sentence3, .sentence4 {
+  height: 90px;
+}
+
+.sentence-h4-All, .sentence h4, .sentence2 h4, .sentence3 h4, .sentence4 h4 {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-All, .button, .button2, .button3, .button4 {
+  background: #ca0c0c;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
+  background-color: white;
+  color: #ca0c0c;
 }
 
 .over-lay, .over-lay-section1, .over-lay-singleServices {
@@ -2032,7 +2697,7 @@ body {
   background: #ca0c0c;
 }
 
-.transition, .letter, .all-p, .letter-section2 {
+.transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
@@ -2049,15 +2714,15 @@ body {
           justify-content: center;
 }
 
-.width-100, #header, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.width-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.height-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .button-All, .button, .button2, .button3, .button4, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   height: 100%;
 }
 
-.background-img, #header, #section1, #section2, #singleServices, #section3 {
+.background-img, #section1, #section2, #singleServices, #section3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2136,6 +2801,123 @@ body {
 
 .btn-overlay p, .up-btn-overlay p, .next-btn-overlay p, .prew-btn-overlay p {
   font-size: 16px;
+}
+
+.overlay-All, .over-lay-header, .over-lay-header2, .over-lay-header3, .over-lay-header4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 800px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logoheader-img, .logo-header img, .logo-header2 img, .logo-header3 img, .logo-header4 img {
+  max-height: 120px;
+  max-width: 100%;
+  margin: 0px 30px;
+  padding: 15px;
+  margin-top: -10px;
+}
+
+.letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1 {
+  color: white;
+  margin: 0px;
+  font-weight: 50px;
+}
+
+.letter-All, .letter, .letter2, .letter3, .letter4 {
+  top: 320px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.box-All, .box, .box2, .box3, .box4 {
+  z-index: -1;
+  top: 33.5%;
+  left: 45.1%;
+  width: 223px;
+  height: 20px;
+  padding: 2px;
+  background-color: #ca0c0c;
+}
+
+.letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
+  font-size: 80px;
+  font: weight 800;
+}
+
+.letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p {
+  color: rgba(211, 211, 211, 0.897);
+  font-weight: 400px;
+  margin: 10px 0px;
+  padding: 10px -10px;
+  font-family: cursive;
+}
+
+.tags-All, .tags, .tags2, .tags3, .tags4 {
+  width: 18%;
+  background: none;
+  position: relative;
+  padding: 6px;
+  top: 30px;
+  left: 0px;
+}
+
+.tags-h5-All, .tags h5, .tags2 h5, .tags3 h5, .tags4 h5 {
+  padding: 15px 0px;
+  top: -35px;
+  left: 0px;
+  font-weight: 100;
+  border-bottom: 2px solid red;
+}
+
+.tags-h5-All a, .tags h5 a, .tags2 h5 a, .tags3 h5 a, .tags4 h5 a {
+  color: white;
+  text-decoration: none;
+}
+
+.up-logo-header-All, .up-logo-header, .up-logo-header2, .up-logo-header3, .up-logo-header4 {
+  top: 260px;
+  left: 70px;
+  z-index: 1;
+  display: inline-block;
+  width: 265px;
+  height: 360px;
+  -webkit-transition: all  1.5s ease;
+  transition: all  1.5s ease;
+}
+
+.up-page-All, .up-page, .up-page2, .up-page3, .up-page4 {
+  left: 0px;
+  top: 275px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sentence-All, .sentence, .sentence2, .sentence3, .sentence4 {
+  height: 90px;
+}
+
+.sentence-h4-All, .sentence h4, .sentence2 h4, .sentence3 h4, .sentence4 h4 {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-All, .button, .button2, .button3, .button4 {
+  background: #ca0c0c;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
+  background-color: white;
+  color: #ca0c0c;
 }
 
 body {
@@ -2185,7 +2967,7 @@ body {
   background: #ca0c0c;
 }
 
-.transition, .letter, .all-p, .letter-section2 {
+.transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
@@ -2202,15 +2984,15 @@ body {
           justify-content: center;
 }
 
-.width-100, #header, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.width-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.height-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .button-All, .button, .button2, .button3, .button4, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   height: 100%;
 }
 
-.background-img, #header, #section1, #section2, #singleServices, #section3 {
+.background-img, #section1, #section2, #singleServices, #section3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2289,6 +3071,123 @@ body {
 
 .btn-overlay p, .up-btn-overlay p, .next-btn-overlay p, .prew-btn-overlay p {
   font-size: 16px;
+}
+
+.overlay-All, .over-lay-header, .over-lay-header2, .over-lay-header3, .over-lay-header4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 800px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logoheader-img, .logo-header img, .logo-header2 img, .logo-header3 img, .logo-header4 img {
+  max-height: 120px;
+  max-width: 100%;
+  margin: 0px 30px;
+  padding: 15px;
+  margin-top: -10px;
+}
+
+.letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1 {
+  color: white;
+  margin: 0px;
+  font-weight: 50px;
+}
+
+.letter-All, .letter, .letter2, .letter3, .letter4 {
+  top: 320px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.box-All, .box, .box2, .box3, .box4 {
+  z-index: -1;
+  top: 33.5%;
+  left: 45.1%;
+  width: 223px;
+  height: 20px;
+  padding: 2px;
+  background-color: #ca0c0c;
+}
+
+.letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
+  font-size: 80px;
+  font: weight 800;
+}
+
+.letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p {
+  color: rgba(211, 211, 211, 0.897);
+  font-weight: 400px;
+  margin: 10px 0px;
+  padding: 10px -10px;
+  font-family: cursive;
+}
+
+.tags-All, .tags, .tags2, .tags3, .tags4 {
+  width: 18%;
+  background: none;
+  position: relative;
+  padding: 6px;
+  top: 30px;
+  left: 0px;
+}
+
+.tags-h5-All, .tags h5, .tags2 h5, .tags3 h5, .tags4 h5 {
+  padding: 15px 0px;
+  top: -35px;
+  left: 0px;
+  font-weight: 100;
+  border-bottom: 2px solid red;
+}
+
+.tags-h5-All a, .tags h5 a, .tags2 h5 a, .tags3 h5 a, .tags4 h5 a {
+  color: white;
+  text-decoration: none;
+}
+
+.up-logo-header-All, .up-logo-header, .up-logo-header2, .up-logo-header3, .up-logo-header4 {
+  top: 260px;
+  left: 70px;
+  z-index: 1;
+  display: inline-block;
+  width: 265px;
+  height: 360px;
+  -webkit-transition: all  1.5s ease;
+  transition: all  1.5s ease;
+}
+
+.up-page-All, .up-page, .up-page2, .up-page3, .up-page4 {
+  left: 0px;
+  top: 275px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sentence-All, .sentence, .sentence2, .sentence3, .sentence4 {
+  height: 90px;
+}
+
+.sentence-h4-All, .sentence h4, .sentence2 h4, .sentence3 h4, .sentence4 h4 {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-All, .button, .button2, .button3, .button4 {
+  background: #ca0c0c;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
+  background-color: white;
+  color: #ca0c0c;
 }
 
 .over-lay, .over-lay-section1, .over-lay-singleServices {
@@ -2699,7 +3598,7 @@ body {
   background: #ca0c0c;
 }
 
-.transition, .letter, .all-p, .letter-section2 {
+.transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
@@ -2716,15 +3615,15 @@ body {
           justify-content: center;
 }
 
-.width-100, #header, .letter h1, h5, .letter p, .up-logo-header img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.width-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   width: 100%;
 }
 
-.height-100, .letter h1, h5, .letter p, .up-logo-header img, .button, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
+.height-100, .letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1, .letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p, .up-logo-header-img-All, .up-logo-header img, .up-logo-header2 img, .up-logo-header3 img, .up-logo-header4 img, .button-All, .button, .button2, .button3, .button4, .upletter-section1H, .upletter-section1 h1, .upletter-singleServices h1, .upletter-section1P, .upletter-section1 p, .upletter-singleServices p, .letter-section2 h1, .letter-section2 p, .up-logo-section2 img {
   height: 100%;
 }
 
-.background-img, #header, #section1, #section2, #singleServices, #section3 {
+.background-img, #section1, #section2, #singleServices, #section3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2803,5 +3702,122 @@ body {
 
 .btn-overlay p, .up-btn-overlay p, .next-btn-overlay p, .prew-btn-overlay p {
   font-size: 16px;
+}
+
+.overlay-All, .over-lay-header, .over-lay-header2, .over-lay-header3, .over-lay-header4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 800px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logoheader-img, .logo-header img, .logo-header2 img, .logo-header3 img, .logo-header4 img {
+  max-height: 120px;
+  max-width: 100%;
+  margin: 0px 30px;
+  padding: 15px;
+  margin-top: -10px;
+}
+
+.letter-h1-h5, .letter h1, h5, .letter2 h1, .letter3 h1, .letter4 h1 {
+  color: white;
+  margin: 0px;
+  font-weight: 50px;
+}
+
+.letter-All, .letter, .letter2, .letter3, .letter4 {
+  top: 320px;
+  left: 500px;
+  font-size: 20px;
+}
+
+.box-All, .box, .box2, .box3, .box4 {
+  z-index: -1;
+  top: 33.5%;
+  left: 45.1%;
+  width: 223px;
+  height: 20px;
+  padding: 2px;
+  background-color: #ca0c0c;
+}
+
+.letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
+  font-size: 80px;
+  font: weight 800;
+}
+
+.letter-p-All, .letter p, .letter2 p, .letter3 p, .letter4 p {
+  color: rgba(211, 211, 211, 0.897);
+  font-weight: 400px;
+  margin: 10px 0px;
+  padding: 10px -10px;
+  font-family: cursive;
+}
+
+.tags-All, .tags, .tags2, .tags3, .tags4 {
+  width: 18%;
+  background: none;
+  position: relative;
+  padding: 6px;
+  top: 30px;
+  left: 0px;
+}
+
+.tags-h5-All, .tags h5, .tags2 h5, .tags3 h5, .tags4 h5 {
+  padding: 15px 0px;
+  top: -35px;
+  left: 0px;
+  font-weight: 100;
+  border-bottom: 2px solid red;
+}
+
+.tags-h5-All a, .tags h5 a, .tags2 h5 a, .tags3 h5 a, .tags4 h5 a {
+  color: white;
+  text-decoration: none;
+}
+
+.up-logo-header-All, .up-logo-header, .up-logo-header2, .up-logo-header3, .up-logo-header4 {
+  top: 260px;
+  left: 70px;
+  z-index: 1;
+  display: inline-block;
+  width: 265px;
+  height: 360px;
+  -webkit-transition: all  1.5s ease;
+  transition: all  1.5s ease;
+}
+
+.up-page-All, .up-page, .up-page2, .up-page3, .up-page4 {
+  left: 0px;
+  top: 275px;
+  height: 85px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sentence-All, .sentence, .sentence2, .sentence3, .sentence4 {
+  height: 90px;
+}
+
+.sentence-h4-All, .sentence h4, .sentence2 h4, .sentence3 h4, .sentence4 h4 {
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-All, .button, .button2, .button3, .button4 {
+  background: #ca0c0c;
+  color: white;
+  width: 110px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+}
+
+.button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
+  background-color: white;
+  color: #ca0c0c;
 }
 /*# sourceMappingURL=style.css.map */
