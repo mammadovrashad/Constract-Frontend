@@ -45,6 +45,14 @@ body {
   background: #ca0c0c;
 }
 
+.hover-white:hover {
+  background: white;
+}
+
+.hover-white:hover i {
+  color: black;
+}
+
 .transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -188,7 +196,7 @@ body {
   width: 223px;
   height: 20px;
   padding: 2px;
-  background-color: #ca0c0c;
+  background-color: #e01111;
 }
 
 .letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
@@ -255,7 +263,7 @@ body {
 }
 
 .button-All, .button, .button2, .button3, .button4 {
-  background: #ca0c0c;
+  background: #e01111;
   color: white;
   width: 110px;
   cursor: pointer;
@@ -265,7 +273,11 @@ body {
 
 .button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
   background-color: white;
-  color: #ca0c0c;
+  color: #e01111;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -433,7 +445,7 @@ ul {
 }
 
 .right-buttons button:hover {
-  background: #ca0c0c;
+  background: #e01111;
 }
 
 .right-buttons button:hover i {
@@ -564,7 +576,7 @@ li {
   top: 20%;
   left: 15%;
   font-size: 70px;
-  color: #ca0c0c;
+  color: #e01111;
 }
 
 .writing {
@@ -636,6 +648,31 @@ li {
   opacity: 0.5;
 }
 
+.refresh-button {
+  display: none;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  right: 20px;
+  top: 80%;
+}
+
+.refresh-button .refresh {
+  width: 100%;
+  height: 100%;
+  background: #e01111;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all height .5s ease;
+  transition: all height .5s ease;
+}
+
+.refresh-button .refresh i {
+  font-size: 20px;
+  color: white;
+}
+
 @-webkit-keyframes slideshow {
   0% {
     -webkit-transform: translateX(0);
@@ -705,6 +742,14 @@ body {
   background: #ca0c0c;
 }
 
+.hover-white:hover {
+  background: white;
+}
+
+.hover-white:hover i {
+  color: black;
+}
+
 .transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -848,7 +893,7 @@ body {
   width: 223px;
   height: 20px;
   padding: 2px;
-  background-color: #ca0c0c;
+  background-color: #e01111;
 }
 
 .letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
@@ -915,7 +960,7 @@ body {
 }
 
 .button-All, .button, .button2, .button3, .button4 {
-  background: #ca0c0c;
+  background: #e01111;
   color: white;
   width: 110px;
   cursor: pointer;
@@ -925,7 +970,7 @@ body {
 
 .button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
   background-color: white;
-  color: #ca0c0c;
+  color: #e01111;
 }
 
 body {
@@ -975,6 +1020,14 @@ body {
   background: #ca0c0c;
 }
 
+.hover-white:hover {
+  background: white;
+}
+
+.hover-white:hover i {
+  color: black;
+}
+
 .transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -1118,7 +1171,7 @@ body {
   width: 223px;
   height: 20px;
   padding: 2px;
-  background-color: #ca0c0c;
+  background-color: #e01111;
 }
 
 .letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
@@ -1185,7 +1238,7 @@ body {
 }
 
 .button-All, .button, .button2, .button3, .button4 {
-  background: #ca0c0c;
+  background: #e01111;
   color: white;
   width: 110px;
   cursor: pointer;
@@ -1195,7 +1248,7 @@ body {
 
 .button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
   background-color: white;
-  color: #ca0c0c;
+  color: #e01111;
 }
 
 .over-lay, .over-lay-section1, .over-lay-singleServices {
@@ -1229,7 +1282,7 @@ body {
 }
 
 .menu ul li:hover, .menu-section1 ul li:hover, .menu-singleServices ul li:hover, .menu-section3 ul li:hover {
-  background: #ca0c0c;
+  background: #e01111;
 }
 
 .icon, .icon-section1, .icon-singleServices, .icon-section3 {
@@ -1301,7 +1354,7 @@ body {
 .section1-line {
   height: 18px;
   width: 260px;
-  background: #ca0c0c;
+  background: #e01111;
   position: relative;
   top: -20px;
   z-index: -1;
@@ -1333,7 +1386,7 @@ body {
   top: 30px;
   left: 30px;
   font-size: 70px;
-  color: #ca0c0c;
+  color: #e01111;
 }
 
 .section1col-4 h3 {
@@ -1351,7 +1404,7 @@ body {
   top: 210px;
   width: 75%;
   height: 10px;
-  background: #ca0c0c;
+  background: #e01111;
 }
 
 .section1coll-4 {
@@ -1401,7 +1454,7 @@ body {
 }
 
 .section1coll-4 .about-btn:hover {
-  background: #ca0c0c;
+  background: #e01111;
 }
 
 .section1coll-4 .about-btn:hover i {
@@ -1496,6 +1549,14 @@ body {
   background: #ca0c0c;
 }
 
+.hover-white:hover {
+  background: white;
+}
+
+.hover-white:hover i {
+  color: black;
+}
+
 .transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -1639,7 +1700,7 @@ body {
   width: 223px;
   height: 20px;
   padding: 2px;
-  background-color: #ca0c0c;
+  background-color: #e01111;
 }
 
 .letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
@@ -1706,7 +1767,7 @@ body {
 }
 
 .button-All, .button, .button2, .button3, .button4 {
-  background: #ca0c0c;
+  background: #e01111;
   color: white;
   width: 110px;
   cursor: pointer;
@@ -1716,7 +1777,7 @@ body {
 
 .button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
   background-color: white;
-  color: #ca0c0c;
+  color: #e01111;
 }
 
 bod {
@@ -1821,7 +1882,7 @@ bod {
   width: 365px;
   height: 15px;
   padding: 2px;
-  background-color: #ca0c0c;
+  background-color: #e01111;
 }
 
 .letter-section2 h1 {
@@ -1950,6 +2011,14 @@ body {
   background: #ca0c0c;
 }
 
+.hover-white:hover {
+  background: white;
+}
+
+.hover-white:hover i {
+  color: black;
+}
+
 .transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -2093,7 +2162,7 @@ body {
   width: 223px;
   height: 20px;
   padding: 2px;
-  background-color: #ca0c0c;
+  background-color: #e01111;
 }
 
 .letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
@@ -2160,7 +2229,7 @@ body {
 }
 
 .button-All, .button, .button2, .button3, .button4 {
-  background: #ca0c0c;
+  background: #e01111;
   color: white;
   width: 110px;
   cursor: pointer;
@@ -2170,7 +2239,7 @@ body {
 
 .button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
   background-color: white;
-  color: #ca0c0c;
+  color: #e01111;
 }
 
 body {
@@ -2220,6 +2289,14 @@ body {
   background: #ca0c0c;
 }
 
+.hover-white:hover {
+  background: white;
+}
+
+.hover-white:hover i {
+  color: black;
+}
+
 .transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -2363,7 +2440,7 @@ body {
   width: 223px;
   height: 20px;
   padding: 2px;
-  background-color: #ca0c0c;
+  background-color: #e01111;
 }
 
 .letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
@@ -2430,7 +2507,7 @@ body {
 }
 
 .button-All, .button, .button2, .button3, .button4 {
-  background: #ca0c0c;
+  background: #e01111;
   color: white;
   width: 110px;
   cursor: pointer;
@@ -2440,7 +2517,7 @@ body {
 
 .button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
   background-color: white;
-  color: #ca0c0c;
+  color: #e01111;
 }
 
 .over-lay, .over-lay-section1, .over-lay-singleServices {
@@ -2474,7 +2551,7 @@ body {
 }
 
 .menu ul li:hover, .menu-section1 ul li:hover, .menu-singleServices ul li:hover, .menu-section3 ul li:hover {
-  background: #ca0c0c;
+  background: #e01111;
 }
 
 .icon, .icon-section1, .icon-singleServices, .icon-section3 {
@@ -2543,7 +2620,7 @@ body {
 .singleServices-line {
   height: 20px;
   width: 345px;
-  background: #ca0c0c;
+  background: #e01111;
   position: relative;
   top: -95px;
   z-index: -1;
@@ -2575,7 +2652,7 @@ body {
   top: 30px;
   left: 30px;
   font-size: 70px;
-  color: #ca0c0c;
+  color: #e01111;
 }
 
 .singleServicescol-4 h3 {
@@ -2594,7 +2671,7 @@ body {
   z-index: 5;
   width: 1140px;
   height: 10px;
-  background: #ca0c0c;
+  background: #e01111;
 }
 
 .singleServicescoll-4 {
@@ -2645,7 +2722,7 @@ body {
 }
 
 .singleServicescoll-4 .singleServices-btn:hover {
-  background: #ca0c0c;
+  background: #e01111;
 }
 
 .singleServicescoll-4 .singleServices-btn:hover i {
@@ -2740,6 +2817,14 @@ body {
   background: #ca0c0c;
 }
 
+.hover-white:hover {
+  background: white;
+}
+
+.hover-white:hover i {
+  color: black;
+}
+
 .transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -2883,7 +2968,7 @@ body {
   width: 223px;
   height: 20px;
   padding: 2px;
-  background-color: #ca0c0c;
+  background-color: #e01111;
 }
 
 .letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
@@ -2950,7 +3035,7 @@ body {
 }
 
 .button-All, .button, .button2, .button3, .button4 {
-  background: #ca0c0c;
+  background: #e01111;
   color: white;
   width: 110px;
   cursor: pointer;
@@ -2960,7 +3045,7 @@ body {
 
 .button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
   background-color: white;
-  color: #ca0c0c;
+  color: #e01111;
 }
 
 body {
@@ -3010,6 +3095,14 @@ body {
   background: #ca0c0c;
 }
 
+.hover-white:hover {
+  background: white;
+}
+
+.hover-white:hover i {
+  color: black;
+}
+
 .transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -3153,7 +3246,7 @@ body {
   width: 223px;
   height: 20px;
   padding: 2px;
-  background-color: #ca0c0c;
+  background-color: #e01111;
 }
 
 .letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
@@ -3220,7 +3313,7 @@ body {
 }
 
 .button-All, .button, .button2, .button3, .button4 {
-  background: #ca0c0c;
+  background: #e01111;
   color: white;
   width: 110px;
   cursor: pointer;
@@ -3230,7 +3323,7 @@ body {
 
 .button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
   background-color: white;
-  color: #ca0c0c;
+  color: #e01111;
 }
 
 .over-lay, .over-lay-section1, .over-lay-singleServices {
@@ -3264,7 +3357,7 @@ body {
 }
 
 .menu ul li:hover, .menu-section1 ul li:hover, .menu-singleServices ul li:hover, .menu-section3 ul li:hover {
-  background: #ca0c0c;
+  background: #e01111;
 }
 
 .icon, .icon-section1, .icon-singleServices, .icon-section3 {
@@ -3641,6 +3734,14 @@ body {
   background: #ca0c0c;
 }
 
+.hover-white:hover {
+  background: white;
+}
+
+.hover-white:hover i {
+  color: black;
+}
+
 .transition, .letter-All, .letter, .letter2, .letter3, .letter4, .all-p, .letter-section2 {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -3784,7 +3885,7 @@ body {
   width: 223px;
   height: 20px;
   padding: 2px;
-  background-color: #ca0c0c;
+  background-color: #e01111;
 }
 
 .letter-h1-All, .letter h1, .letter2 h1, .letter3 h1, .letter4 h1 {
@@ -3851,7 +3952,7 @@ body {
 }
 
 .button-All, .button, .button2, .button3, .button4 {
-  background: #ca0c0c;
+  background: #e01111;
   color: white;
   width: 110px;
   cursor: pointer;
@@ -3861,6 +3962,6 @@ body {
 
 .button-All:hover, .button:hover, .button2:hover, .button3:hover, .button4:hover {
   background-color: white;
-  color: #ca0c0c;
+  color: #e01111;
 }
 /*# sourceMappingURL=style.css.map */

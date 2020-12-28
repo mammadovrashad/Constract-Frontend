@@ -103,10 +103,14 @@ li2.addEventListener('mouseout',function(){
     let logoSticky=document.querySelectorAll("img")[0]
     let HeaderMenu=document.querySelector(".rightblock-header")
     let largeblockStickySingle=document.querySelectorAll('.largeblock-header ul li a')[3]
+    let refreshBtn=document.querySelector('.refresh-button')
+    console.log(refreshBtn)
     window.addEventListener('scroll',function(){
         if(window.scrollY>300){
             console.log(window.scroll)
         largeblockStickyH.style.position='fixed'
+        refreshBtn.style.display="block"
+        refreshBtn.style.position="fixed"
         largeblockStickyH.style.maxHeight=75+'px';
         largeblockStickyH.style.zIndex=10;
         logoSticky.style.maxHeight=75+'px'
@@ -117,10 +121,12 @@ li2.addEventListener('mouseout',function(){
         logoSticky.setAttribute('src','img/logo/2.logo.png')
         largeblockStickyColor.forEach(element => {
             element.style.color="black"
+            
     }) 
-     
+    
         }
         else{
+            refreshBtn.style.display="none"
             largeblockStickyH.style.position='absolute'
             largeblockStickyH.style.maxHeight=130+'px';
             logoSticky.style.maxHeight=120+'px'
@@ -135,7 +141,9 @@ li2.addEventListener('mouseout',function(){
                 largeblockStickySingle.style.color="red"
             }
     })
-
+refreshBtn.addEventListener('click',function(){
+    window.scrollTo(0, 0)
+})
 const back=document.querySelectorAll('.right-buttons button')[0];
 const next=document.querySelectorAll('.right-buttons button')[1];
 const sliderCountainer=document.querySelector('#slider-countainer');
