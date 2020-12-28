@@ -315,29 +315,12 @@ body{
     width: 100%;
     height: 200px;
     margin-top: 33px;
-    }
-.slider-galareya{
-    display:flex;
-    width: 80%;
+    .galareya{
     background:white;
+    width: 80%;
     height: 150px;
-    position: relative;
-    left: 12%;
-    overflow: hidden;
-}
-.galareya{
-    display:flex;
-    align-items: center;
-    animation: slideshow 15s linear infinite;
-   img{
-      width: 200px;
-      height: 65px;
-      opacity: 0.5;
-   }
-}
-@keyframes slideshow {
-    0% {transform:translateX(0);}
-    100% {transform:translateX(-100%);}
+    transform: translateX(14%);
+    }
 }
 .over-lay-header2{
     @extend .overlay-All
