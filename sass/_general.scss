@@ -22,8 +22,11 @@ body{
 }
 .hover {
     &:hover{
-        background:#ca0c0c ;
+        background:$color-darkred;
         transition: .5s ease-in-out;
+        i{
+            color:white;
+        }
        
     }}
 .hover2 {

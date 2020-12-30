@@ -79,14 +79,9 @@ function Appear4(){
     letter4.style.display='block';
 }
 
-
-// let upHand=document.querySelectorAll('img','src')[1]
-// let upInterval=setInterval(function(){
+// li0.addEventListener('click',function(){
 //     upHand.style.top=560+'px'
-// },600)
-li0.addEventListener('click',function(){
-    upHand.style.top=560+'px'
-})
+// })
 let serviceUl=document.querySelectorAll('ul')[1]
 console.log(serviceUl)
 let li2=document.querySelectorAll('.li')[2]
@@ -141,9 +136,12 @@ li2.addEventListener('mouseout',function(){
                 largeblockStickySingle.style.color="red"
             }
     })
+    m=0
 refreshBtn.addEventListener('click',function(){
-    window.scrollTo(0, 0)
-})
+        window.scrollTo(0, 0)
+        m++
+        console.log(m)
+    })
 const back=document.querySelectorAll('.right-buttons button')[0];
 const next=document.querySelectorAll('.right-buttons button')[1];
 const sliderCountainer=document.querySelector('#slider-countainer');
@@ -152,7 +150,6 @@ let counter=0;
 function sliderRun1() {
     if(counter<max){
         counter++
-        console.log(counter)
         sliderCountainer.style.left="-" + 1520 * counter + 'px'
 }  
     else{
@@ -179,3 +176,36 @@ back.addEventListener('click',sliderRun2)
 function stopTime(){
     clearInterval(timer)
 }
+const count_left_btn=document.querySelectorAll('.count-button')[0];
+const count_right_btn=document.querySelectorAll('.count-button')[1];
+const count_img1=document.querySelector('.count-imgs');
+const max_loop=2
+inflexive=0
+count_right_btn.addEventListener("click",countRun1)
+function countRun1(){
+    if(inflexive<max_loop){
+        inflexive++
+        count_img1.style.left="-"+ 100*inflexive + "%";
+    }
+    else{
+       inflexive=0;
+       count_img1.style.left="-"+ 100*inflexive + "%";
+    }
+}
+count_left_btn.addEventListener("click",countRun2)
+function countRun2(){
+    if(inflexive>0){
+        inflexive--
+        count_img1.style.left="-"+ 100*inflexive + "%";
+    }
+    else{
+       inflexive=max_loop;
+       count_img1.style.left="-"+ 100*inflexive + "%";
+    }
+}
+let count_setInterval=setInterval(countRun1,3000)
+function Stop_coun_Interval(){
+    clearInterval(count_setInterval)
+}
+count_left_btn.addEventListener("click",Stop_coun_Interval)
+count_right_btn.addEventListener("click",Stop_coun_Interval)
