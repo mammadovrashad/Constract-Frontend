@@ -149,7 +149,7 @@ body{
         .tags{
             @extend .tags-All
            }
-            .tags h5{
+            .tags .h5{
             @extend .tags-h5-All
         }
 
@@ -301,16 +301,20 @@ body{
     font-family: cursive;
     width: calc(100% + 90px);
     font-size: 18px;
-    }
-    h4{
+    margin-bottom: 35px;
+    }}
+    .view-service-span {
+        &:hover{
+            .hover-red{
+                background: white;
+            }
+        }
     margin: 50px 0px;
     font-weight: 200;
     }
-}
 .view-services{
     text-decoration: none;
     color: black;
-    border-bottom:2px solid red;
     margin-top:20px
 }
 #section-kollection{
@@ -387,7 +391,7 @@ body{
         .tags2{
             @extend .tags-All
            }
-            .tags2 h5{
+            .tags2 .h5{
             @extend .tags-h5-All
         }
 
@@ -435,7 +439,7 @@ body{
                 .tags3{
                     @extend .tags-All
                    }
-                    .tags3 h5{
+                    .tags3 .h5{
                     @extend .tags-h5-All
                 }
         .up-logo-header3{
@@ -483,7 +487,7 @@ body{
             .tags4{
                 @extend .tags-All
                }
-                .tags4 h5{
+                .tags4 .h5{
                 @extend .tags-h5-All
             }
     .up-logo-header4{
@@ -504,7 +508,7 @@ body{
  .button4{
    @extend .button-All
  }
- .count-img1{
+  .count-img1{
     width: 100%;
     height: 560px;
     transform: translateX(-40px);
@@ -705,7 +709,7 @@ to {
     transform: translate(40px, 50px);
     }
 }
-.icon{
+.icons-header{
     width: 60px;
     height: 60px;
     transform: translate(45%, 90%);
@@ -729,10 +733,19 @@ to {
     }
 }
 .letter-span{
+    &:hover{
+        .hover-red{
+            background: white;
+        }
+     }
     a{
     text-decoration: none;
     color:black;
     font-size: 16px;
+    &:hover{
+        a{
+            background: white;}
+    }
 }}
 .hover-red{
     height: 2px;
@@ -747,15 +760,16 @@ to {
     }
 #master{
     width: 100%;
-    height: 1800px;
+    height: 1133px;
     background-color: rgb(224, 224, 224);
     transform: translateY(-23px);
 }
-.master-letter{
-    width: 100%;
+.master-letter {
     display: inline-block;
-    transform: translateX(15%);
+    width: 100%;
     h1{
+        width: 1200px;
+        transform: translateX(15%);
         font-size:60px;
     }
 }
@@ -811,4 +825,81 @@ to {
     font-size: smaller;
     margin-left: 30px;
     color: #9b9797;
+}
+.apply-picture{
+    width: 100%;
+    height: 350px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.apply-block{
+    transform: translate(0px,40%);
+}
+.apply{
+    width: 75%;
+    height: 350px;
+    background: white;
+}
+.apply-letter{
+    display: inline-block;
+    transform: translate(110px, 45px);
+    font-size: 25px;
+}
+.apply-span {
+    cursor: pointer;
+    &:hover{
+       .hover-red{
+           background: white;
+       }
+    }
+    a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 5px
+}}
+.get-in-touch-line{
+    width: 26.5%;
+    height: 20px;
+    background: $color-darkred;
+    position: absolute;
+    top: 7%;
+    left: 40%;
+    z-index: -1;
+}
+.form-home{
+    width: 100%;
+    padding:5px 0px;
+    height:760px;
+    display: flex;
+    justify-content: center;
+    input{
+    transform: translateX(-20%);
+    margin-top: 20px;
+    color: gray;
+    height: 50px;
+    font-size: 16px;
+    outline: none;
+    width: 200px;
+    border: none;
+    background: none;
+    margin-left: 35px;
+    border-bottom: 1px solid gray;
+}
+select{
+    transform: translateX(-20%);
+    margin-top: 20px;
+    color: gray;
+    height: 55px;
+    font-size: 16px;
+    outline: none;
+    width: 200px;
+    border: none;
+    background: none;
+    margin-left: 35px;
+    border-bottom: 1px solid gray;
+}
 }

@@ -168,7 +168,7 @@ body{
             font-family:cursive;
 }
 .tags-All{
-    width: 18%;
+    width: 23%;
     background: none;
     position: relative;
     padding: 6px;
@@ -180,10 +180,10 @@ body{
             top:-35px;
             left:0px;
             font-weight: 100;
-            border-bottom:2px solid red;
             a{
                 color:$color-white;
                 text-decoration:none;
+                font-size: 16px;
             }
 }
 .up-logo-header-All{
