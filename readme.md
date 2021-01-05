@@ -40,11 +40,12 @@
 ##DAY-5
   - claslar vasitesi ile section1-in yazilmasi 
   
-##DAY-6 
+##DAY-6
   - transforum:translate()
   - transforum scale()
   - overflow:hidden
   - flex-wrap:nowrap;
+
 ##DAY-7
   - javaScript vasitesi ile saytin dinamik versiyaya getirilmesi
   - setInterval
@@ -56,7 +57,31 @@
   - appendChild
   - onclick
   - removeChild
+
 ##DAY-8
   - mouseover
   - dropdown hissesinin yazilmasi
   - single service hissesinin yazilmasi
+
+##DAY-9
+  - skill-bar hissenin yazilmasi
+  - keyframe
+
+#DAY-10
+  - lightbox hissenin yazilmasi
+  - for each
+
+##DAY-11
+  - master-page hissenin yazilmasi
+
+##DAY-12
+  - apply form hissenin yazilmasi
+
+##DAY-13
+  - bezi responsivliklerin arasan qaldirilmasi
+
+##DAY-14
+  - menu-bar hissenin yazilmasi
+
+#DAY-15
+  - form hissenin yazimasi
