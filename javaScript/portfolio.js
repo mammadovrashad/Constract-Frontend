@@ -16,6 +16,18 @@ let plusicon6=document.querySelectorAll('.fas ')[6]
 overLayimg1.style.width=0+'%'
 plusBtn1.style.width=0+'px';
 plusicon6.style.display='none'
+plusBtn1.addEventListener('mouseover',function(){
+  plusBtn1.style.width=60+'px'
+  overLayimg1.style.width=100+'%'
+  plusicon6.style.display='block'
+  plusBtn1.style.transition='all 0.4s ease'
+  overLayimg1.style.transition='all 0.4s ease'
+})
+plusBtn1.addEventListener('mouseout',function(){
+  plusBtn1.style.width=0+'px';
+  overLayimg1.style.width=0+'%'
+  plusicon6.style.display='none'
+})
 imgOver1.addEventListener('mouseover',function(){
   plusBtn1.style.width=60+'px'
   overLayimg1.style.width=100+'%'
@@ -47,6 +59,18 @@ let plusicon7=document.querySelectorAll('.fas ')[7]
 overLayimg2.style.width=0+'%'
 plusBtn2.style.width=0+'px';
 plusicon7.style.display='none'
+plusBtn2.addEventListener('mouseover',function(){
+  plusBtn2.style.width=60+'px'
+  overLayimg2.style.width=100+'%'
+  plusicon7.style.display='block'
+  plusBtn2.style.transition='all 0.4s ease'
+  overLayimg2.style.transition='all 0.4s ease'
+})
+plusBtn2.addEventListener('mouseout',function(){
+  plusBtn2.style.width=0+'px';
+  overLayimg2.style.width=0+'%'
+  plusicon7.style.display='none'
+})
 imgOver2.addEventListener('mouseover',function(){
   plusBtn2.style.width=60+'px'
   overLayimg2.style.width=100+'%'
@@ -78,6 +102,18 @@ let plusicon8=document.querySelectorAll('.fas')[8]
 overLayimg3.style.width=0+'%'
 plusBtn3.style.width=0+'px';
 plusicon8.style.display='none'
+plusBtn3.addEventListener('mouseover',function(){
+  plusBtn3.style.width=60+'px'
+  overLayimg3.style.width=100+'%'
+  plusicon8.style.display='block'
+  plusBtn3.style.transition='all 0.4s ease'
+  overLayimg3.style.transition='all 0.4s ease'
+})
+plusBtn3.addEventListener('mouseout',function(){
+  plusBtn3.style.width=0+'px';
+  overLayimg3.style.width=0+'%'
+  plusicon8.style.display='none'
+})
 imgOver3.addEventListener('mouseover',function(){
   plusBtn3.style.width=60+'px'
   overLayimg3.style.width=100+'%'
@@ -109,6 +145,18 @@ let plusicon9=document.querySelectorAll('.fas')[9]
 overLayimg4.style.width=0+'%'
 plusBtn4.style.width=0+'px';
 plusicon9.style.display='none'
+plusBtn4.addEventListener('mouseover',function(){
+  plusBtn4.style.width=60+'px'
+  overLayimg4.style.width=100+'%'
+  plusicon9.style.display='block'
+  plusBtn4.style.transition='all 0.4s ease'
+  overLayimg4.style.transition='all 0.4s ease'
+})
+plusBtn4.addEventListener('mouseout',function(){
+  plusBtn4.style.width=0+'px';
+  overLayimg4.style.width=0+'%'
+  plusicon9.style.display='none'
+})
 imgOver4.addEventListener('mouseover',function(){
   plusBtn4.style.width=60+'px'
   overLayimg4.style.width=100+'%'
@@ -140,6 +188,18 @@ let plusicon10=document.querySelectorAll('.fas')[10]
 overLayimg5.style.width=0+'%'
 plusBtn5.style.width=0+'px';
 plusicon10.style.display='none'
+plusBtn5.addEventListener('mouseover',function(){
+  plusBtn5.style.width=60+'px'
+  overLayimg5.style.width=100+'%'
+  plusicon10.style.display='block'
+  plusBtn5.style.transition='all 0.4s ease'
+  overLayimg5.style.transition='all 0.4s ease'
+})
+plusBtn5.addEventListener('mouseout',function(){
+  plusBtn5.style.width=0+'px';
+  overLayimg5.style.width=0+'%'
+  plusicon10.style.display='none'
+})
 imgOver5.addEventListener('mouseover',function(){
   plusBtn5.style.width=60+'px'
   overLayimg5.style.width=100+'%'
@@ -171,6 +231,18 @@ let plusicon11=document.querySelectorAll('.fas')[11]
 overLayimg6.style.width=0+'%'
 plusBtn6.style.width=0+'px';
 plusicon11.style.display='none'
+plusBtn6.addEventListener('mouseover',function(){
+  plusBtn6.style.width=60+'px'
+  overLayimg6.style.width=100+'%'
+  plusicon11.style.display='block'
+  plusBtn6.style.transition='all 0.4s ease'
+  overLayimg6.style.transition='all 0.4s ease'
+})
+plusBtn6.addEventListener('mouseout',function(){
+  plusBtn6.style.width=0+'px';
+  overLayimg6.style.width=0+'%'
+  plusicon11.style.display='none'
+})
 imgOver6.addEventListener('mouseover',function(){
   plusBtn6.style.width=60+'px'
   overLayimg6.style.width=100+'%'
@@ -220,7 +292,7 @@ window.addEventListener('scroll',function(){
 
 let portfolioSection=document.querySelector('#portfolio-section')
 let upmodal=document.querySelector('.up-modal')
-overLayimg1.addEventListener('click',function(){
+plusBtn1.addEventListener('click',function(){
 let  overlayDiv =document.createElement('div')
 overlayDiv.className='overlay-modal'
 upmodal.appendChild(overlayDiv)
@@ -230,12 +302,22 @@ overlayDiv.appendChild(frontDiv)
 let frontImg=document.createElement('img')
 frontImg.setAttribute('src',imgs[0])
 frontDiv.appendChild(frontImg)
-document.querySelector('.up-btn-overlay').style.display='block'
+document.querySelector('.up-btn-overlay').style.display='block'})
 // document.querySelector('.next-btn-overlay').style.display='block'
 // document.querySelector('.prew-btn-overlay').style.display='block'
-
+overLayimg1.addEventListener('click',function(){
+  let  overlayDiv =document.createElement('div')
+  overlayDiv.className='overlay-modal'
+  upmodal.appendChild(overlayDiv)
+  let frontDiv=document.createElement('div')
+  frontDiv.className='front-img'
+  overlayDiv.appendChild(frontDiv)
+  let frontImg=document.createElement('img')
+  frontImg.setAttribute('src',imgs[0])
+  frontDiv.appendChild(frontImg)
+  document.querySelector('.up-btn-overlay').style.display='block'
 })
-overLayimg2.addEventListener('click',function(){
+plusBtn2.addEventListener('click',function(){
   let  overlayDiv =document.createElement('div')
   overlayDiv.className='overlay-modal'
   upmodal.appendChild(overlayDiv)
@@ -249,7 +331,67 @@ overLayimg2.addEventListener('click',function(){
   // document.querySelector('.next-btn-overlay').style.display='block'
   // document.querySelector('.prew-btn-overlay').style.display='block'
   })
+  overLayimg2.addEventListener('click',function(){
+    let  overlayDiv =document.createElement('div')
+    overlayDiv.className='overlay-modal'
+    upmodal.appendChild(overlayDiv)
+    let frontDiv=document.createElement('div')
+    frontDiv.className='front-img'
+    overlayDiv.appendChild(frontDiv)
+    let frontImg=document.createElement('img')
+    frontImg.setAttribute('src',imgs[0])
+    frontDiv.appendChild(frontImg)
+    document.querySelector('.up-btn-overlay').style.display='block'
+  })
   overLayimg3.addEventListener('click',function(){
+    let  overlayDiv =document.createElement('div')
+    overlayDiv.className='overlay-modal'
+    upmodal.appendChild(overlayDiv)
+    let frontDiv=document.createElement('div')
+    frontDiv.className='front-img'
+    overlayDiv.appendChild(frontDiv)
+    let frontImg=document.createElement('img')
+    frontImg.setAttribute('src',imgs[0])
+    frontDiv.appendChild(frontImg)
+    document.querySelector('.up-btn-overlay').style.display='block'
+  })
+  overLayimg4.addEventListener('click',function(){
+    let  overlayDiv =document.createElement('div')
+    overlayDiv.className='overlay-modal'
+    upmodal.appendChild(overlayDiv)
+    let frontDiv=document.createElement('div')
+    frontDiv.className='front-img'
+    overlayDiv.appendChild(frontDiv)
+    let frontImg=document.createElement('img')
+    frontImg.setAttribute('src',imgs[0])
+    frontDiv.appendChild(frontImg)
+    document.querySelector('.up-btn-overlay').style.display='block'
+  })
+  overLayimg5.addEventListener('click',function(){
+    let  overlayDiv =document.createElement('div')
+    overlayDiv.className='overlay-modal'
+    upmodal.appendChild(overlayDiv)
+    let frontDiv=document.createElement('div')
+    frontDiv.className='front-img'
+    overlayDiv.appendChild(frontDiv)
+    let frontImg=document.createElement('img')
+    frontImg.setAttribute('src',imgs[0])
+    frontDiv.appendChild(frontImg)
+    document.querySelector('.up-btn-overlay').style.display='block'
+  })
+  overLayimg6.addEventListener('click',function(){
+    let  overlayDiv =document.createElement('div')
+    overlayDiv.className='overlay-modal'
+    upmodal.appendChild(overlayDiv)
+    let frontDiv=document.createElement('div')
+    frontDiv.className='front-img'
+    overlayDiv.appendChild(frontDiv)
+    let frontImg=document.createElement('img')
+    frontImg.setAttribute('src',imgs[0])
+    frontDiv.appendChild(frontImg)
+    document.querySelector('.up-btn-overlay').style.display='block'
+  })
+  overLayimg3,plusBtn3.addEventListener('click',function(){
     let  overlayDiv =document.createElement('div')
     overlayDiv.className='overlay-modal'
     upmodal.appendChild(overlayDiv)
@@ -263,7 +405,7 @@ overLayimg2.addEventListener('click',function(){
     // document.querySelector('.next-btn-overlay').style.display='block'
     // document.querySelector('.prew-btn-overlay').style.display='block'
     })
-    overLayimg4.addEventListener('click',function(){
+    overLayimg4,plusBtn4.addEventListener('click',function(){
       let  overlayDiv =document.createElement('div')
       overlayDiv.className='overlay-modal'
       upmodal.appendChild(overlayDiv)
@@ -278,7 +420,7 @@ overLayimg2.addEventListener('click',function(){
       // document.querySelector('.prew-btn-overlay').style.display='block'
 
       })
-      overLayimg5.addEventListener('click',function(){
+      overLayimg5,plusBtn5.addEventListener('click',function(){
         let  overlayDiv =document.createElement('div')
         overlayDiv.className='overlay-modal'
         upmodal.appendChild(overlayDiv)
@@ -292,7 +434,7 @@ overLayimg2.addEventListener('click',function(){
         // document.querySelector('.next-btn-overlay').style.display='block'
         // document.querySelector('.prew-btn-overlay').style.display='block'
         })
-        overLayimg6.addEventListener('click',function(){
+      overLayimg6,plusBtn6.addEventListener('click',function(){
           let  overlayDiv =document.createElement('div')
           overlayDiv.className='overlay-modal'
           upmodal.appendChild(overlayDiv)

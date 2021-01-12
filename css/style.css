@@ -358,7 +358,37 @@ body {
   background-attachment: fixed;
 }
 
+#slider-countainer input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.manual-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 92%;
+}
+
+.manual-btn1, .manual-btn2, .manual-btn3, .manual-btn4 {
+  width: 20px;
+  height: 5px;
+  background: white;
+  margin: 5px;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  cursor: pointer;
+}
+
+.manual-btn1:hover, .manual-btn2:hover, .manual-btn3:hover, .manual-btn4:hover {
+  background: #e91b1b;
+}
+
 .largeblock-header {
+  background: none;
   position: absolute;
   z-index: 5;
 }
@@ -801,7 +831,7 @@ li {
 }
 
 .skill-area {
-  padding: 2% 10%;
+  padding: 1% 10%;
 }
 
 .skill {
@@ -827,7 +857,7 @@ li {
 .skill-fill {
   background: none;
   width: 98%;
-  height: 15px;
+  height: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1058,7 +1088,7 @@ li {
 
 #master {
   width: 100%;
-  height: 1133px;
+  height: 1126px;
   background-color: #e0e0e0;
   -webkit-transform: translateY(-23px);
           transform: translateY(-23px);
@@ -1199,7 +1229,7 @@ li {
 .form-home {
   width: 100%;
   padding: 5px 0px;
-  height: 760px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1236,6 +1266,51 @@ li {
   background: none;
   margin-left: 35px;
   border-bottom: 1px solid gray;
+}
+
+.konstract-location, .address {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+}
+
+.konstract-location span i, .address span i {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 15px;
+  color: #e91b1b;
+  font-weight: 100;
+}
+
+.konstract-location p, .address p {
+  font-weight: inherit;
+  margin: 0px;
+  color: gray;
+}
+
+.call-us, .email {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: sans-serif;
+  margin: auto;
+}
+
+.call-us p, .email p {
+  font-weight: inherit;
+  margin: 0px;
+  color: gray;
 }
 
 body {
@@ -1954,6 +2029,7 @@ body {
   position: absolute;
   top: 210px;
   width: 75%;
+  z-index: 2;
   height: 10px;
   background: #e91b1b;
 }
@@ -3230,9 +3306,9 @@ body {
 
 .upline-singleServices {
   position: absolute;
-  top: 218px;
+  top: 217px;
   z-index: 5;
-  width: 1140px;
+  width: 75%;
   height: 10px;
   background: #e91b1b;
 }

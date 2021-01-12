@@ -145,6 +145,15 @@ refreshBtn.addEventListener('click',function(){
 const back=document.querySelectorAll('.right-buttons button')[0];
 const next=document.querySelectorAll('.right-buttons button')[1];
 const sliderCountainer=document.querySelector('#slider-countainer');
+let radio_btn1=document.querySelector(".manual-btn1")
+let radio_btn2=document.querySelector(".manual-btn2")
+let radio_btn3=document.querySelector(".manual-btn3")
+let radio_btn4=document.querySelector(".manual-btn4")
+// const radioBtn=document.querySelector(".manual-navigation");
+// console.log(radioBtn)
+// radioBtn.forEach(element=>{
+// element.addEventListener("mouseover",stopTime)
+// })
 const max=3
 let counter=0;
 function sliderRun1() {
